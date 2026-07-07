@@ -6,8 +6,8 @@ from querysmith.llm import OpenAICompatibleClient
 from querysmith.pipeline import execute_select, generate_query
 
 
-QUESTION = "Show the latest orders."
-SCHEMA = "dbo"
+QUESTION = "Show me the person with the national code 2981532571"
+SCHEMA = "core"
 EXECUTE_QUERY = False
 
 

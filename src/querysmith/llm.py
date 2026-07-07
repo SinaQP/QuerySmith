@@ -42,6 +42,12 @@ class OpenAICompatibleClient:
             "AVALAI_API_KEY",
             "OPENAI_API_KEY",
         )
+        if not self.api_key:
+            raise RuntimeError(
+                "Missing LLM API key. Set QUERYSMITH_LLM_API_KEY, "
+                "AVALAI_API_KEY, or OPENAI_API_KEY."
+            )
+
         self.base_url = base_url or _first_env_value(
             "QUERYSMITH_LLM_BASE_URL",
             "AVALAI_BASE_URL",

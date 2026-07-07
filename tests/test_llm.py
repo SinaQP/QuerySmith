@@ -129,6 +129,49 @@ def test_openai_compatible_client_default_base_url(
     assert client.base_url == "https://api.avalai.ir/v1"
 
 
+def test_openai_compatible_client_env_vars_override_defaults(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("QUERYSMITH_LLM_API_KEY", "env-key")
+    monkeypatch.setenv("QUERYSMITH_LLM_BASE_URL", "https://env.test/v1")
+    monkeypatch.setenv("QUERYSMITH_LLM_MODEL", "env-model")
+
+    client = OpenAICompatibleClient()
+
+    assert client.api_key == "env-key"
+    assert client.base_url == "https://env.test/v1"
+    assert client.model_name == "env-model"
+
+
+def test_openai_compatible_client_explicit_args_override_env_vars(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("QUERYSMITH_LLM_API_KEY", "env-key")
+    monkeypatch.setenv("QUERYSMITH_LLM_BASE_URL", "https://env.test/v1")
+    monkeypatch.setenv("QUERYSMITH_LLM_MODEL", "env-model")
+
+    client = OpenAICompatibleClient(
+        api_key="explicit-key",
+        base_url="https://explicit.test/v1",
+        model_name="explicit-model",
+    )
+
+    assert client.api_key == "explicit-key"
+    assert client.base_url == "https://explicit.test/v1"
+    assert client.model_name == "explicit-model"
+
+
+def test_openai_compatible_client_requires_api_key(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.delenv("QUERYSMITH_LLM_API_KEY", raising=False)
+    monkeypatch.delenv("AVALAI_API_KEY", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+
+    with pytest.raises(RuntimeError, match="QUERYSMITH_LLM_API_KEY"):
+        OpenAICompatibleClient()
+
+
 def test_openai_compatible_client_complete_uses_internal_client() -> None:
     client = OpenAICompatibleClient(
         api_key="test-key",

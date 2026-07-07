@@ -28,11 +28,15 @@ def load_config() -> DBConfig:
     """Load database configuration from environment variables."""
 
     load_dotenv()
-    print(os.getenv("DB_SERVER"))
+    server = os.getenv("DB_SERVER") or os.getenv("DB_HOST")
+    port = os.getenv("DB_PORT")
+    if server and port and "," not in server and "\\" not in server:
+        server = f"{server},{port}"
+
     required_variables = {
-        "DB_SERVER": os.getenv("DB_SERVER"),
-        "DB_DATABASE": os.getenv("DB_DATABASE"),
-        "DB_USERNAME": os.getenv("DB_USERNAME"),
+        "DB_SERVER or DB_HOST": server,
+        "DB_DATABASE or DB_NAME": os.getenv("DB_DATABASE") or os.getenv("DB_NAME"),
+        "DB_USERNAME or DB_USER": os.getenv("DB_USERNAME") or os.getenv("DB_USER"),
         "DB_PASSWORD": os.getenv("DB_PASSWORD"),
     }
     missing_variables = [
@@ -44,9 +48,9 @@ def load_config() -> DBConfig:
         raise ValueError(f"Missing required environment variables: {missing}")
 
     return DBConfig(
-        server=required_variables["DB_SERVER"] or "",
-        database=required_variables["DB_DATABASE"] or "",
-        username=required_variables["DB_USERNAME"] or "",
+        server=required_variables["DB_SERVER or DB_HOST"] or "",
+        database=required_variables["DB_DATABASE or DB_NAME"] or "",
+        username=required_variables["DB_USERNAME or DB_USER"] or "",
         password=required_variables["DB_PASSWORD"] or "",
         driver=os.getenv("DB_DRIVER") or "ODBC Driver 17 for SQL Server",
         trusted_connection=_parse_bool(os.getenv("DB_TRUSTED_CONNECTION")),

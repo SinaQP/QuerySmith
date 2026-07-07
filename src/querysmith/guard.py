@@ -1,0 +1,1 @@
+"""SQL query guardrail placeholder."""

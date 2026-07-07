@@ -15,18 +15,25 @@ class DBConfig:
     username: str
     password: str
     driver: str = "ODBC Driver 17 for SQL Server"
+    trusted_connection: bool = False
+
+
+def _parse_bool(value: str | None) -> bool:
+    """Parse a permissive boolean environment value."""
+
+    return value is not None and value.casefold() in {"true", "1", "yes"}
 
 
 def load_config() -> DBConfig:
     """Load database configuration from environment variables."""
 
     load_dotenv()
-
+    print(os.getenv("DB_SERVER"))
     required_variables = {
-        "QUERYSMITH_SERVER": os.getenv("QUERYSMITH_SERVER"),
-        "QUERYSMITH_DATABASE": os.getenv("QUERYSMITH_DATABASE"),
-        "QUERYSMITH_USERNAME": os.getenv("QUERYSMITH_USERNAME"),
-        "QUERYSMITH_PASSWORD": os.getenv("QUERYSMITH_PASSWORD"),
+        "DB_SERVER": os.getenv("DB_SERVER"),
+        "DB_DATABASE": os.getenv("DB_DATABASE"),
+        "DB_USERNAME": os.getenv("DB_USERNAME"),
+        "DB_PASSWORD": os.getenv("DB_PASSWORD"),
     }
     missing_variables = [
         name for name, value in required_variables.items() if value is None or value == ""
@@ -37,9 +44,10 @@ def load_config() -> DBConfig:
         raise ValueError(f"Missing required environment variables: {missing}")
 
     return DBConfig(
-        server=required_variables["QUERYSMITH_SERVER"] or "",
-        database=required_variables["QUERYSMITH_DATABASE"] or "",
-        username=required_variables["QUERYSMITH_USERNAME"] or "",
-        password=required_variables["QUERYSMITH_PASSWORD"] or "",
-        driver=os.getenv("QUERYSMITH_DRIVER") or "ODBC Driver 17 for SQL Server",
+        server=required_variables["DB_SERVER"] or "",
+        database=required_variables["DB_DATABASE"] or "",
+        username=required_variables["DB_USERNAME"] or "",
+        password=required_variables["DB_PASSWORD"] or "",
+        driver=os.getenv("DB_DRIVER") or "ODBC Driver 17 for SQL Server",
+        trusted_connection=_parse_bool(os.getenv("DB_TRUSTED_CONNECTION")),
     )

@@ -1,24 +1,33 @@
 """Database connection helpers for QuerySmith."""
 
-from urllib.parse import quote_plus
-
-from sqlalchemy import Engine, create_engine, text
+from sqlalchemy import Engine, URL, create_engine, text
 
 from querysmith.config import DBConfig
+
+
+def build_url(cfg: DBConfig) -> URL:
+    """Build a SQLAlchemy URL from a raw ODBC connection string."""
+
+    odbc_parts = [
+        f"DRIVER={{{cfg.driver}}}",
+        f"SERVER={cfg.server}",
+        f"DATABASE={cfg.database}",
+        "TrustServerCertificate=yes",
+    ]
+
+    if cfg.trusted_connection:
+        odbc_parts.append("Trusted_Connection=yes")
+    else:
+        odbc_parts.extend([f"UID={cfg.username}", f"PWD={cfg.password}"])
+
+    odbc_string = ";".join(odbc_parts) + ";"
+    return URL.create("mssql+pyodbc", query={"odbc_connect": odbc_string})
 
 
 def make_engine(config: DBConfig) -> Engine:
     """Create a SQLAlchemy engine for SQL Server through pyodbc."""
 
-    username = quote_plus(config.username)
-    password = quote_plus(config.password)
-    driver = quote_plus(config.driver)
-    connection_string = (
-        f"mssql+pyodbc://{username}:{password}@{config.server}/"
-        f"{config.database}?driver={driver}"
-    )
-
-    return create_engine(connection_string, pool_pre_ping=True)
+    return create_engine(build_url(config), pool_pre_ping=True)
 
 
 def test_connection(engine: Engine) -> str:

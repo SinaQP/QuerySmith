@@ -12,6 +12,8 @@ dependencies = [
     "sqlalchemy>=2.0",
     "pyodbc",
     "python-dotenv",
+    "openai",
+    "langchain-openai",
 ]
 
 [project.optional-dependencies]

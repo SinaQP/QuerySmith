@@ -1,0 +1,380 @@
+{
+  "communities": {
+    "0": [
+      "main",
+      "main_main",
+      "main_rationale_15",
+      "pytest",
+      "src_querysmith_config",
+      "src_querysmith_config_dbconfig",
+      "src_querysmith_config_load_config",
+      "src_querysmith_config_parse_bool",
+      "src_querysmith_config_rationale_1",
+      "src_querysmith_config_rationale_11",
+      "src_querysmith_config_rationale_22",
+      "src_querysmith_config_rationale_28",
+      "src_querysmith_db",
+      "src_querysmith_db_build_url",
+      "src_querysmith_db_make_engine",
+      "src_querysmith_db_py_engine",
+      "src_querysmith_db_rationale_1",
+      "src_querysmith_db_rationale_28",
+      "src_querysmith_db_rationale_34",
+      "src_querysmith_db_rationale_9",
+      "src_querysmith_db_test_connection",
+      "src_querysmith_init",
+      "tests_test_config",
+      "tests_test_config_py_monkeypatch",
+      "tests_test_config_rationale_1",
+      "tests_test_config_rationale_23",
+      "tests_test_config_rationale_9",
+      "tests_test_config_test_config_parses_trusted_flag",
+      "tests_test_config_test_config_supports_env_example_names",
+      "tests_test_db",
+      "tests_test_db_rationale_1",
+      "tests_test_db_rationale_25",
+      "tests_test_db_rationale_43",
+      "tests_test_db_rationale_8",
+      "tests_test_db_test_build_url_named_instance",
+      "tests_test_db_test_build_url_sql_auth",
+      "tests_test_db_test_build_url_trusted",
+      "url",
+      "valueerror"
+    ],
+    "1": [
+      "src_querysmith_introspector_introspect_schema",
+      "src_querysmith_introspector_py_engine",
+      "src_querysmith_introspector_rationale_9",
+      "src_querysmith_models",
+      "src_querysmith_models_column",
+      "src_querysmith_models_foreignkey",
+      "src_querysmith_models_rationale_1",
+      "src_querysmith_models_rationale_19",
+      "src_querysmith_models_rationale_28",
+      "src_querysmith_models_rationale_38",
+      "src_querysmith_models_rationale_8",
+      "src_querysmith_models_table",
+      "src_querysmith_models_table_full_name",
+      "src_querysmith_serializer",
+      "src_querysmith_serializer_qualified_referenced_table",
+      "src_querysmith_serializer_qualified_table_name",
+      "src_querysmith_serializer_rationale_1",
+      "src_querysmith_serializer_rationale_7",
+      "src_querysmith_serializer_serialize_column",
+      "src_querysmith_serializer_serialize_schema",
+      "tests_test_models",
+      "tests_test_models_rationale_1",
+      "tests_test_models_rationale_7",
+      "tests_test_models_test_table_full_name_and_schema_fields",
+      "tests_test_serializer",
+      "tests_test_serializer_rationale_1",
+      "tests_test_serializer_test_serialize_schema_is_compact_and_deterministic",
+      "tests_test_serializer_test_serialize_schema_marks_no_relationships",
+      "tests_test_serializer_test_serialize_schema_returns_empty_marker_for_no_tables"
+    ],
+    "2": [
+      "src_querysmith_pipeline_execute_select",
+      "src_querysmith_pipeline_generate_query",
+      "src_querysmith_pipeline_py_engine",
+      "src_querysmith_pipeline_rationale_17",
+      "src_querysmith_pipeline_rationale_29",
+      "tests_test_pipeline",
+      "tests_test_pipeline_fakeclient",
+      "tests_test_pipeline_fakeclient_complete",
+      "tests_test_pipeline_fakeclient_init",
+      "tests_test_pipeline_fakeconnection",
+      "tests_test_pipeline_fakeconnection_enter",
+      "tests_test_pipeline_fakeconnection_execute",
+      "tests_test_pipeline_fakeconnection_exit",
+      "tests_test_pipeline_fakeconnection_init",
+      "tests_test_pipeline_fakeengine",
+      "tests_test_pipeline_fakeengine_connect",
+      "tests_test_pipeline_fakeengine_init",
+      "tests_test_pipeline_fakeresult",
+      "tests_test_pipeline_fakeresult_mappings",
+      "tests_test_pipeline_py_monkeypatch",
+      "tests_test_pipeline_rationale_1",
+      "tests_test_pipeline_test_execute_select_rejects_invalid_max_rows",
+      "tests_test_pipeline_test_execute_select_rejects_unsafe_sql",
+      "tests_test_pipeline_test_execute_select_validates_sql_before_execution",
+      "tests_test_pipeline_test_execute_select_wraps_safe_sql_and_returns_rows",
+      "tests_test_pipeline_test_generate_query_does_not_execute_sql",
+      "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client",
+      "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm",
+      "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm"
+    ],
+    "3": [
+      "src_querysmith_guard",
+      "src_querysmith_guard_normalize_sql",
+      "src_querysmith_guard_rationale_1",
+      "src_querysmith_guard_rationale_58",
+      "src_querysmith_guard_rationale_9",
+      "src_querysmith_guard_remove_optional_trailing_semicolon",
+      "src_querysmith_guard_unsafequeryerror",
+      "src_querysmith_guard_validate_safe_select",
+      "tests_test_guard",
+      "tests_test_guard_rationale_1",
+      "tests_test_guard_test_accept_select_with_trailing_semicolon",
+      "tests_test_guard_test_accept_simple_select",
+      "tests_test_guard_test_accept_with_cte_select",
+      "tests_test_guard_test_reject_block_comments",
+      "tests_test_guard_test_reject_dangerous_write_keywords",
+      "tests_test_guard_test_reject_empty_sql",
+      "tests_test_guard_test_reject_exec",
+      "tests_test_guard_test_reject_line_comments",
+      "tests_test_guard_test_reject_multiple_statements",
+      "tests_test_guard_test_reject_query_starting_with_non_select_or_with",
+      "tests_test_guard_test_reject_select_into",
+      "tests_test_guard_test_reject_use_database",
+      "tests_test_guard_test_returned_sql_is_stripped_and_trailing_semicolon_removed"
+    ],
+    "4": [
+      "langchain_openai",
+      "openai",
+      "protocol",
+      "pyodbc",
+      "python_dotenv",
+      "requirements",
+      "sqlalchemy",
+      "src_querysmith_introspector",
+      "src_querysmith_introspector_rationale_1",
+      "src_querysmith_llm",
+      "src_querysmith_llm_first_env_value",
+      "src_querysmith_llm_llmclient",
+      "src_querysmith_llm_llmclient_complete",
+      "src_querysmith_llm_openaicompatibleclient_init",
+      "src_querysmith_llm_rationale_1",
+      "src_querysmith_llm_rationale_25",
+      "src_querysmith_llm_rationale_28",
+      "src_querysmith_pipeline",
+      "src_querysmith_pipeline_rationale_1"
+    ],
+    "5": [
+      "src_querysmith_llm_build_sql_prompt",
+      "src_querysmith_llm_rationale_100",
+      "tests_test_llm",
+      "tests_test_llm_py_monkeypatch",
+      "tests_test_llm_rationale_1",
+      "tests_test_llm_test_build_sql_prompt_includes_schema_text",
+      "tests_test_llm_test_build_sql_prompt_includes_user_question",
+      "tests_test_llm_test_build_sql_prompt_mentions_sql_server_or_tsql",
+      "tests_test_llm_test_build_sql_prompt_says_output_sql_only",
+      "tests_test_llm_test_openai_compatible_client_default_base_url",
+      "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults",
+      "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars",
+      "tests_test_llm_test_openai_compatible_client_requires_api_key"
+    ],
+    "6": [
+      "src_querysmith_llm_clean_sql_response",
+      "src_querysmith_llm_generate_sql",
+      "src_querysmith_llm_rationale_138",
+      "src_querysmith_llm_rationale_147",
+      "tests_test_llm_fakeclient",
+      "tests_test_llm_fakeclient_init",
+      "tests_test_llm_test_generate_sql_raises_for_delete",
+      "tests_test_llm_test_generate_sql_raises_for_multiple_statements",
+      "tests_test_llm_test_generate_sql_removes_markdown_sql_fences",
+      "tests_test_llm_test_generate_sql_returns_safe_select_from_fake_client",
+      "tests_test_llm_test_generate_sql_sends_prompt_to_client"
+    ],
+    "7": [
+      "chatopenai",
+      "src_querysmith_llm_openaicompatibleclient",
+      "src_querysmith_llm_openaicompatibleclient_complete",
+      "src_querysmith_llm_openaicompatibleclient_get_model",
+      "src_querysmith_llm_rationale_32",
+      "src_querysmith_llm_rationale_63",
+      "src_querysmith_llm_rationale_80",
+      "tests_test_llm_fakechoice",
+      "tests_test_llm_fakecompletion",
+      "tests_test_llm_fakecompletions_create",
+      "tests_test_llm_fakemessage",
+      "tests_test_llm_test_openai_compatible_client_accepts_explicit_config"
+    ],
+    "8": [
+      "tests_test_llm_fakechat",
+      "tests_test_llm_fakechat_init",
+      "tests_test_llm_fakecompletions",
+      "tests_test_llm_fakecompletions_init",
+      "tests_test_llm_fakeopenaichatclient_init"
+    ],
+    "9": [
+      "tests_test_llm_fakeclient_complete",
+      "tests_test_llm_fakeopenaichatclient",
+      "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response",
+      "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client"
+    ],
+    "11": [
+      "openaiembeddings",
+      "src_querysmith_llm_openaicompatibleclient_get_embeddings",
+      "src_querysmith_llm_rationale_90"
+    ],
+    "12": [
+      "pkg_querysmith"
+    ],
+    "13": [
+      "readme"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07827260458839407,
+    "1": 0.13054187192118227,
+    "2": 0.13054187192118227,
+    "3": 0.1857707509881423,
+    "4": 0.12280701754385964,
+    "5": 0.23076923076923078,
+    "6": 0.2545454545454545,
+    "7": 0.19696969696969696,
+    "8": 0.4,
+    "9": 0.6666666666666666,
+    "11": 0.6666666666666666,
+    "12": 1.0,
+    "13": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_querysmith_guard_unsafequeryerror",
+      "label": "UnsafeQueryError",
+      "degree": 28
+    },
+    {
+      "id": "src_querysmith_llm_openaicompatibleclient",
+      "label": "OpenAICompatibleClient",
+      "degree": 21
+    },
+    {
+      "id": "src_querysmith_guard_validate_safe_select",
+      "label": "validate_safe_select()",
+      "degree": 20
+    },
+    {
+      "id": "src_querysmith_models_table",
+      "label": "Table",
+      "degree": 17
+    },
+    {
+      "id": "tests_test_pipeline_fakeengine",
+      "label": "FakeEngine",
+      "degree": 15
+    },
+    {
+      "id": "src_querysmith_llm_generate_sql",
+      "label": "generate_sql()",
+      "degree": 13
+    },
+    {
+      "id": "src_querysmith_models_column",
+      "label": "Column",
+      "degree": 13
+    },
+    {
+      "id": "src_querysmith_pipeline_generate_query",
+      "label": "generate_query()",
+      "degree": 12
+    },
+    {
+      "id": "src_querysmith_pipeline_execute_select",
+      "label": "execute_select()",
+      "degree": 10
+    },
+    {
+      "id": "src_querysmith_serializer_serialize_schema",
+      "label": "serialize_schema()",
+      "degree": 10
+    }
+  ],
+  "surprises": [
+    {
+      "source": "main()",
+      "target": "OpenAICompatibleClient",
+      "source_files": [
+        "main.py",
+        "src/querysmith/llm.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "execute_select()",
+      "source_files": [
+        "main.py",
+        "src/querysmith/pipeline.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "generate_query()",
+      "source_files": [
+        "main.py",
+        "src/querysmith/pipeline.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "FakeChat",
+      "target": "UnsafeQueryError",
+      "source_files": [
+        "tests/test_llm.py",
+        "src/querysmith/guard.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "FakeChoice",
+      "target": "UnsafeQueryError",
+      "source_files": [
+        "tests/test_llm.py",
+        "src/querysmith/guard.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `UnsafeQueryError` connect `SQL Safety Validation` to `Configuration Management`, `Query Execution and Generation`, `Safe SQL Generation`, `OpenAI Client Compatibility`, `Fake Chat Components`, `OpenAI Client Testing`?",
+      "why": "High betweenness centrality (0.204) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `OpenAICompatibleClient` connect `OpenAI Client Compatibility` to `Configuration Management`, `OpenAI Integration`, `SQL Prompt Building`, `Safe SQL Generation`, `Fake Chat Components`, `OpenAI Client Testing`, `OpenAI Embeddings`?",
+      "why": "High betweenness centrality (0.156) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `main()` connect `Configuration Management` to `Query Execution and Generation`, `OpenAI Client Compatibility`?",
+      "why": "High betweenness centrality (0.136) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 24 inferred relationships involving `UnsafeQueryError` (e.g. with `test_reject_block_comments()` and `test_reject_dangerous_write_keywords()`) actually correct?",
+      "why": "`UnsafeQueryError` has 24 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 15 inferred relationships involving `OpenAICompatibleClient` (e.g. with `main()` and `FakeChat`) actually correct?",
+      "why": "`OpenAICompatibleClient` has 15 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 15 inferred relationships involving `validate_safe_select()` (e.g. with `generate_sql()` and `execute_select()`) actually correct?",
+      "why": "`validate_safe_select()` has 15 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 9 inferred relationships involving `Table` (e.g. with `test_table_full_name_and_schema_fields()` and `FakeClient`) actually correct?",
+      "why": "`Table` has 9 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ]
+}

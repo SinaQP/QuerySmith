@@ -1,0 +1,17 @@
+# Graphify integration and generated outputs are not project source.
+.codex/
+graphify-out/
+AGENTS.md
+
+# Local environments, caches, and secrets.
+.venv/
+.pytest_cache/
+__pycache__/
+.env
+.env.*
+!.env.example
+
+# Build artifacts.
+build/
+dist/
+*.egg-info/

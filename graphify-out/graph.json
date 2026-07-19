@@ -9,10 +9,10 @@
       "source_file": "main.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "main",
       "community": 0,
-      "norm_label": "main.py",
       "community_name": "Configuration Management",
-      "id": "main"
+      "norm_label": "main.py"
     },
     {
       "label": "main()",
@@ -20,10 +20,10 @@
       "source_file": "main.py",
       "source_location": "L14",
       "_origin": "ast",
+      "id": "main_main",
       "community": 0,
-      "norm_label": "main()",
       "community_name": "Configuration Management",
-      "id": "main_main"
+      "norm_label": "main()"
     },
     {
       "label": "Run a small local QuerySmith prototype.",
@@ -31,10 +31,10 @@
       "source_file": "main.py",
       "source_location": "L15",
       "_origin": "ast",
+      "id": "main_rationale_15",
       "community": 0,
-      "norm_label": "run a small local querysmith prototype.",
       "community_name": "Configuration Management",
-      "id": "main_rationale_15"
+      "norm_label": "run a small local querysmith prototype."
     },
     {
       "label": "querysmith",
@@ -89,9 +89,9 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "_parse_bool()",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "src_querysmith_config_parse_bool"
     },
     {
@@ -100,9 +100,9 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "load_config()",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "src_querysmith_config_load_config"
     },
     {
@@ -133,9 +133,9 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "parse a permissive boolean environment value.",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "src_querysmith_config_rationale_22"
     },
     {
@@ -144,9 +144,9 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "load database configuration from environment variables.",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "src_querysmith_config_rationale_28"
     },
     {
@@ -287,9 +287,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "valueerror",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "valueerror"
     },
     {
@@ -496,9 +496,9 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 7,
+      "community": 14,
       "norm_label": ".get_model()",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": ".get_model",
       "id": "src_querysmith_llm_openaicompatibleclient_get_model"
     },
     {
@@ -507,9 +507,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 7,
+      "community": 14,
       "norm_label": "chatopenai",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": ".get_model",
       "id": "chatopenai"
     },
     {
@@ -639,9 +639,9 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 7,
+      "community": 14,
       "norm_label": "return a langchain chat model configured like this client.",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": ".get_model",
       "id": "src_querysmith_llm_rationale_80"
     },
     {
@@ -958,9 +958,9 @@
       "source_file": "tests/test_config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "test_config.py",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config"
     },
     {
@@ -969,9 +969,9 @@
       "source_file": "tests/test_config.py",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "test_config_parses_trusted_flag()",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config_test_config_parses_trusted_flag"
     },
     {
@@ -980,9 +980,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "monkeypatch",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config_py_monkeypatch"
     },
     {
@@ -991,9 +991,9 @@
       "source_file": "tests/test_config.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "test_config_supports_env_example_names()",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config_test_config_supports_env_example_names"
     },
     {
@@ -1002,9 +1002,9 @@
       "source_file": "tests/test_config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "tests for querysmith configuration loading.",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config_rationale_1"
     },
     {
@@ -1013,9 +1013,9 @@
       "source_file": "tests/test_config.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "the db_trusted_connection flag should parse common true values.",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config_rationale_9"
     },
     {
@@ -1024,9 +1024,9 @@
       "source_file": "tests/test_config.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 0,
+      "community": 10,
       "norm_label": "the documented db_host-style variables should load correctly.",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "tests_test_config_rationale_23"
     },
     {
@@ -1442,9 +1442,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L121",
       "_origin": "ast",
-      "community": 5,
+      "community": 7,
       "norm_label": "test_openai_compatible_client_default_base_url()",
-      "community_name": "SQL Prompt Building",
+      "community_name": "OpenAI Client Compatibility",
       "id": "tests_test_llm_test_openai_compatible_client_default_base_url"
     },
     {
@@ -1453,9 +1453,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 5,
+      "community": 7,
       "norm_label": "monkeypatch",
-      "community_name": "SQL Prompt Building",
+      "community_name": "OpenAI Client Compatibility",
       "id": "tests_test_llm_py_monkeypatch"
     },
     {
@@ -1464,9 +1464,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L132",
       "_origin": "ast",
-      "community": 5,
+      "community": 7,
       "norm_label": "test_openai_compatible_client_env_vars_override_defaults()",
-      "community_name": "SQL Prompt Building",
+      "community_name": "OpenAI Client Compatibility",
       "id": "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults"
     },
     {
@@ -1475,9 +1475,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L146",
       "_origin": "ast",
-      "community": 5,
+      "community": 7,
       "norm_label": "test_openai_compatible_client_explicit_args_override_env_vars()",
-      "community_name": "SQL Prompt Building",
+      "community_name": "OpenAI Client Compatibility",
       "id": "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars"
     },
     {
@@ -1486,9 +1486,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L164",
       "_origin": "ast",
-      "community": 5,
+      "community": 7,
       "norm_label": "test_openai_compatible_client_requires_api_key()",
-      "community_name": "SQL Prompt Building",
+      "community_name": "OpenAI Client Compatibility",
       "id": "tests_test_llm_test_openai_compatible_client_requires_api_key"
     },
     {
@@ -1519,9 +1519,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L202",
       "_origin": "ast",
-      "community": 7,
+      "community": 5,
       "norm_label": "fakemessage",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": "SQL Prompt Building",
       "id": "tests_test_llm_fakemessage"
     },
     {
@@ -1530,9 +1530,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L207",
       "_origin": "ast",
-      "community": 7,
+      "community": 5,
       "norm_label": "fakechoice",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": "SQL Prompt Building",
       "id": "tests_test_llm_fakechoice"
     },
     {
@@ -1541,9 +1541,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L212",
       "_origin": "ast",
-      "community": 7,
+      "community": 5,
       "norm_label": "fakecompletion",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": "SQL Prompt Building",
       "id": "tests_test_llm_fakecompletion"
     },
     {
@@ -1574,9 +1574,9 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L222",
       "_origin": "ast",
-      "community": 7,
+      "community": 5,
       "norm_label": ".create()",
-      "community_name": "OpenAI Client Compatibility",
+      "community_name": "SQL Prompt Building",
       "id": "tests_test_llm_fakecompletions_create"
     },
     {
@@ -2105,9 +2105,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 10,
       "norm_label": "pytest",
-      "community_name": "Configuration Management",
+      "community_name": "load_config",
       "id": "pytest"
     }
   ],
@@ -2119,9 +2119,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "main",
-      "target": "main_main"
+      "target": "main_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2131,9 +2131,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "main",
-      "target": "src_querysmith_config"
+      "target": "src_querysmith_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2143,9 +2143,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "main",
-      "target": "src_querysmith_db"
+      "target": "src_querysmith_db",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2155,9 +2155,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "main",
-      "target": "src_querysmith_llm"
+      "target": "src_querysmith_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2167,69 +2167,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "main",
-      "target": "src_querysmith_pipeline"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "main.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "main_main",
-      "target": "src_querysmith_config_load_config"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "main.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "main_main",
-      "target": "src_querysmith_db_make_engine"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "main.py",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "main_main",
-      "target": "src_querysmith_llm_openaicompatibleclient"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "main.py",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "main_main",
-      "target": "src_querysmith_pipeline_execute_select"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "main.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "main_main",
-      "target": "src_querysmith_pipeline_generate_query"
+      "target": "src_querysmith_pipeline",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2238,9 +2178,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "main_rationale_15",
-      "target": "main_main"
+      "target": "main_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -6507,5 +6447,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "11a870b92e3cdead575a440c761bde4041573c54"
+  "built_at_commit": "fde37039de9d145cbfc33df5de378c9d3a79926b"
 }

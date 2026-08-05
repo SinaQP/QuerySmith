@@ -1,13 +1,43 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.26"]
 build-backend = "hatchling.build"
 
 [project]
 name = "querysmith"
 version = "0.1.0"
-description = "Natural language to safe SQL Server SELECT query foundation."
+description = "Convert Persian and English natural-language questions into safe T-SQL SELECT queries."
 readme = "README.md"
 requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+
+authors = [
+    { name = "Sina", email = "qasempoursina@gmail.com" }
+]
+
+keywords = [
+    "text-to-sql",
+    "sql-server",
+    "t-sql",
+    "llm",
+    "natural-language",
+    "database",
+    "persian"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
 dependencies = [
     "sqlalchemy>=2.0",
     "pyodbc",
@@ -19,7 +49,16 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest",
+    "build",
+    "twine",
+    "ruff",
+    "mypy",
 ]
+
+[project.urls]
+Homepage = "https://github.com/SinaQP/QuerySmith"
+Repository = "https://github.com/SinaQP/QuerySmith"
+Issues = "https://github.com/SinaQP/QuerySmith/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/querysmith"]

@@ -10,8 +10,7 @@
   "8": "Fake Chat Components",
   "9": "OpenAI Client Testing",
   "10": "load_config",
-  "11": "OpenAI Embeddings",
+  "11": ".get_embeddings",
   "12": "QuerySmith Core",
-  "13": "QuerySmith Framework",
-  "14": ".get_model"
+  "13": "QuerySmith Framework"
 }

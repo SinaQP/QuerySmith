@@ -45,10 +45,10 @@
       "source_location": "L1",
       "version": "0.1.0",
       "_origin": "ast",
+      "id": "pkg_querysmith",
       "community": 12,
-      "norm_label": "querysmith",
       "community_name": "QuerySmith Core",
-      "id": "pkg_querysmith"
+      "norm_label": "querysmith"
     },
     {
       "label": "__init__.py",
@@ -56,10 +56,10 @@
       "source_file": "src/querysmith/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_init",
       "community": 0,
-      "norm_label": "__init__.py",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_init"
+      "norm_label": "__init__.py"
     },
     {
       "label": "config.py",
@@ -67,10 +67,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_config",
       "community": 0,
-      "norm_label": "config.py",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_config"
+      "norm_label": "config.py"
     },
     {
       "label": "DBConfig",
@@ -78,10 +78,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L10",
       "_origin": "ast",
+      "id": "src_querysmith_config_dbconfig",
       "community": 0,
-      "norm_label": "dbconfig",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_config_dbconfig"
+      "norm_label": "dbconfig"
     },
     {
       "label": "_parse_bool()",
@@ -89,10 +89,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "_parse_bool()",
-      "community_name": "load_config",
-      "id": "src_querysmith_config_parse_bool"
+      "id": "src_querysmith_config_parse_bool",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "_parse_bool()"
     },
     {
       "label": "load_config()",
@@ -100,10 +100,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "load_config()",
-      "community_name": "load_config",
-      "id": "src_querysmith_config_load_config"
+      "id": "src_querysmith_config_load_config",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "load_config()"
     },
     {
       "label": "Configuration loading for QuerySmith.",
@@ -111,10 +111,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_config_rationale_1",
       "community": 0,
-      "norm_label": "configuration loading for querysmith.",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_config_rationale_1"
+      "norm_label": "configuration loading for querysmith."
     },
     {
       "label": "SQL Server connection configuration.",
@@ -122,10 +122,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L11",
       "_origin": "ast",
+      "id": "src_querysmith_config_rationale_11",
       "community": 0,
-      "norm_label": "sql server connection configuration.",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_config_rationale_11"
+      "norm_label": "sql server connection configuration."
     },
     {
       "label": "Parse a permissive boolean environment value.",
@@ -133,10 +133,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "parse a permissive boolean environment value.",
-      "community_name": "load_config",
-      "id": "src_querysmith_config_rationale_22"
+      "id": "src_querysmith_config_rationale_22",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "parse a permissive boolean environment value."
     },
     {
       "label": "Load database configuration from environment variables.",
@@ -144,10 +144,10 @@
       "source_file": "src/querysmith/config.py",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "load database configuration from environment variables.",
-      "community_name": "load_config",
-      "id": "src_querysmith_config_rationale_28"
+      "id": "src_querysmith_config_rationale_28",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "load database configuration from environment variables."
     },
     {
       "label": "db.py",
@@ -155,10 +155,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_db",
       "community": 0,
-      "norm_label": "db.py",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db"
+      "norm_label": "db.py"
     },
     {
       "label": "build_url()",
@@ -166,10 +166,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L8",
       "_origin": "ast",
+      "id": "src_querysmith_db_build_url",
       "community": 0,
-      "norm_label": "build_url()",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_build_url"
+      "norm_label": "build_url()"
     },
     {
       "label": "URL",
@@ -177,10 +177,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "url",
       "community": 0,
-      "norm_label": "url",
       "community_name": "Configuration Management",
-      "id": "url"
+      "norm_label": "url"
     },
     {
       "label": "make_engine()",
@@ -188,10 +188,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L27",
       "_origin": "ast",
+      "id": "src_querysmith_db_make_engine",
       "community": 0,
-      "norm_label": "make_engine()",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_make_engine"
+      "norm_label": "make_engine()"
     },
     {
       "label": "Engine",
@@ -199,10 +199,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "src_querysmith_db_py_engine",
       "community": 0,
-      "norm_label": "engine",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_py_engine"
+      "norm_label": "engine"
     },
     {
       "label": "test_connection()",
@@ -210,10 +210,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L33",
       "_origin": "ast",
+      "id": "src_querysmith_db_test_connection",
       "community": 0,
-      "norm_label": "test_connection()",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_test_connection"
+      "norm_label": "test_connection()"
     },
     {
       "label": "Database connection helpers for QuerySmith.",
@@ -221,10 +221,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_db_rationale_1",
       "community": 0,
-      "norm_label": "database connection helpers for querysmith.",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_rationale_1"
+      "norm_label": "database connection helpers for querysmith."
     },
     {
       "label": "Build a SQLAlchemy URL from a raw ODBC connection string.",
@@ -232,10 +232,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L9",
       "_origin": "ast",
+      "id": "src_querysmith_db_rationale_9",
       "community": 0,
-      "norm_label": "build a sqlalchemy url from a raw odbc connection string.",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_rationale_9"
+      "norm_label": "build a sqlalchemy url from a raw odbc connection string."
     },
     {
       "label": "Create a SQLAlchemy engine for SQL Server through pyodbc.",
@@ -243,10 +243,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L28",
       "_origin": "ast",
+      "id": "src_querysmith_db_rationale_28",
       "community": 0,
-      "norm_label": "create a sqlalchemy engine for sql server through pyodbc.",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_rationale_28"
+      "norm_label": "create a sqlalchemy engine for sql server through pyodbc."
     },
     {
       "label": "Return the SQL Server version string for a working connection.",
@@ -254,10 +254,10 @@
       "source_file": "src/querysmith/db.py",
       "source_location": "L34",
       "_origin": "ast",
+      "id": "src_querysmith_db_rationale_34",
       "community": 0,
-      "norm_label": "return the sql server version string for a working connection.",
       "community_name": "Configuration Management",
-      "id": "src_querysmith_db_rationale_34"
+      "norm_label": "return the sql server version string for a working connection."
     },
     {
       "label": "guard.py",
@@ -265,10 +265,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_guard",
       "community": 3,
-      "norm_label": "guard.py",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard"
+      "norm_label": "guard.py"
     },
     {
       "label": "UnsafeQueryError",
@@ -276,10 +276,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L8",
       "_origin": "ast",
+      "id": "src_querysmith_guard_unsafequeryerror",
       "community": 3,
-      "norm_label": "unsafequeryerror",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_unsafequeryerror"
+      "norm_label": "unsafequeryerror"
     },
     {
       "label": "ValueError",
@@ -287,10 +287,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "valueerror",
-      "community_name": "load_config",
-      "id": "valueerror"
+      "id": "valueerror",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "valueerror"
     },
     {
       "label": "validate_safe_select()",
@@ -298,10 +298,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L57",
       "_origin": "ast",
+      "id": "src_querysmith_guard_validate_safe_select",
       "community": 3,
-      "norm_label": "validate_safe_select()",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_validate_safe_select"
+      "norm_label": "validate_safe_select()"
     },
     {
       "label": "_remove_optional_trailing_semicolon()",
@@ -309,10 +309,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L103",
       "_origin": "ast",
+      "id": "src_querysmith_guard_remove_optional_trailing_semicolon",
       "community": 3,
-      "norm_label": "_remove_optional_trailing_semicolon()",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_remove_optional_trailing_semicolon"
+      "norm_label": "_remove_optional_trailing_semicolon()"
     },
     {
       "label": "_normalize_sql()",
@@ -320,10 +320,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L110",
       "_origin": "ast",
+      "id": "src_querysmith_guard_normalize_sql",
       "community": 3,
-      "norm_label": "_normalize_sql()",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_normalize_sql"
+      "norm_label": "_normalize_sql()"
     },
     {
       "label": "Application-level validation for generated SQL Server SELECT queries.",
@@ -331,10 +331,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_guard_rationale_1",
       "community": 3,
-      "norm_label": "application-level validation for generated sql server select queries.",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_rationale_1"
+      "norm_label": "application-level validation for generated sql server select queries."
     },
     {
       "label": "Raised when SQL text does not pass the read-only safety guard.",
@@ -342,10 +342,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L9",
       "_origin": "ast",
+      "id": "src_querysmith_guard_rationale_9",
       "community": 3,
-      "norm_label": "raised when sql text does not pass the read-only safety guard.",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_rationale_9"
+      "norm_label": "raised when sql text does not pass the read-only safety guard."
     },
     {
       "label": "Validate that SQL text is a single conservative read-only SELECT query.      Ret",
@@ -353,10 +353,10 @@
       "source_file": "src/querysmith/guard.py",
       "source_location": "L58",
       "_origin": "ast",
+      "id": "src_querysmith_guard_rationale_58",
       "community": 3,
-      "norm_label": "validate that sql text is a single conservative read-only select query.      ret",
       "community_name": "SQL Safety Validation",
-      "id": "src_querysmith_guard_rationale_58"
+      "norm_label": "validate that sql text is a single conservative read-only select query.      ret"
     },
     {
       "label": "introspector.py",
@@ -364,10 +364,10 @@
       "source_file": "src/querysmith/introspector.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_introspector",
       "community": 4,
-      "norm_label": "introspector.py",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_introspector"
+      "norm_label": "introspector.py"
     },
     {
       "label": "introspect_schema()",
@@ -375,10 +375,10 @@
       "source_file": "src/querysmith/introspector.py",
       "source_location": "L8",
       "_origin": "ast",
+      "id": "src_querysmith_introspector_introspect_schema",
       "community": 1,
-      "norm_label": "introspect_schema()",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_introspector_introspect_schema"
+      "norm_label": "introspect_schema()"
     },
     {
       "label": "Engine",
@@ -386,10 +386,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "src_querysmith_introspector_py_engine",
       "community": 1,
-      "norm_label": "engine",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_introspector_py_engine"
+      "norm_label": "engine"
     },
     {
       "label": "SQL Server schema introspection.",
@@ -397,10 +397,10 @@
       "source_file": "src/querysmith/introspector.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_introspector_rationale_1",
       "community": 4,
-      "norm_label": "sql server schema introspection.",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_introspector_rationale_1"
+      "norm_label": "sql server schema introspection."
     },
     {
       "label": "Read table, column, primary key, and foreign key metadata for a schema.",
@@ -408,10 +408,10 @@
       "source_file": "src/querysmith/introspector.py",
       "source_location": "L9",
       "_origin": "ast",
+      "id": "src_querysmith_introspector_rationale_9",
       "community": 1,
-      "norm_label": "read table, column, primary key, and foreign key metadata for a schema.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_introspector_rationale_9"
+      "norm_label": "read table, column, primary key, and foreign key metadata for a schema."
     },
     {
       "label": "llm.py",
@@ -419,10 +419,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_llm",
       "community": 4,
-      "norm_label": "llm.py",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm"
+      "norm_label": "llm.py"
     },
     {
       "label": "LLMClient",
@@ -430,10 +430,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L24",
       "_origin": "ast",
+      "id": "src_querysmith_llm_llmclient",
       "community": 4,
-      "norm_label": "llmclient",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_llmclient"
+      "norm_label": "llmclient"
     },
     {
       "label": "Protocol",
@@ -441,10 +441,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "protocol",
       "community": 4,
-      "norm_label": "protocol",
       "community_name": "OpenAI Integration",
-      "id": "protocol"
+      "norm_label": "protocol"
     },
     {
       "label": ".complete()",
@@ -452,10 +452,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L27",
       "_origin": "ast",
+      "id": "src_querysmith_llm_llmclient_complete",
       "community": 4,
-      "norm_label": ".complete()",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_llmclient_complete"
+      "norm_label": ".complete()"
     },
     {
       "label": "OpenAICompatibleClient",
@@ -463,10 +463,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L31",
       "_origin": "ast",
+      "id": "src_querysmith_llm_openaicompatibleclient",
       "community": 7,
-      "norm_label": "openaicompatibleclient",
       "community_name": "OpenAI Client Compatibility",
-      "id": "src_querysmith_llm_openaicompatibleclient"
+      "norm_label": "openaicompatibleclient"
     },
     {
       "label": ".__init__()",
@@ -474,10 +474,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L34",
       "_origin": "ast",
+      "id": "src_querysmith_llm_openaicompatibleclient_init",
       "community": 4,
-      "norm_label": ".__init__()",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_openaicompatibleclient_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": ".complete()",
@@ -485,10 +485,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L62",
       "_origin": "ast",
+      "id": "src_querysmith_llm_openaicompatibleclient_complete",
       "community": 7,
-      "norm_label": ".complete()",
       "community_name": "OpenAI Client Compatibility",
-      "id": "src_querysmith_llm_openaicompatibleclient_complete"
+      "norm_label": ".complete()"
     },
     {
       "label": ".get_model()",
@@ -496,10 +496,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 14,
-      "norm_label": ".get_model()",
-      "community_name": ".get_model",
-      "id": "src_querysmith_llm_openaicompatibleclient_get_model"
+      "id": "src_querysmith_llm_openaicompatibleclient_get_model",
+      "community": 10,
+      "community_name": "load_config",
+      "norm_label": ".get_model()"
     },
     {
       "label": "ChatOpenAI",
@@ -507,10 +507,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 14,
-      "norm_label": "chatopenai",
-      "community_name": ".get_model",
-      "id": "chatopenai"
+      "id": "chatopenai",
+      "community": 10,
+      "community_name": "load_config",
+      "norm_label": "chatopenai"
     },
     {
       "label": ".get_embeddings()",
@@ -518,10 +518,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L89",
       "_origin": "ast",
+      "id": "src_querysmith_llm_openaicompatibleclient_get_embeddings",
       "community": 11,
-      "norm_label": ".get_embeddings()",
-      "community_name": "OpenAI Embeddings",
-      "id": "src_querysmith_llm_openaicompatibleclient_get_embeddings"
+      "community_name": ".get_embeddings",
+      "norm_label": ".get_embeddings()"
     },
     {
       "label": "OpenAIEmbeddings",
@@ -529,10 +529,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "openaiembeddings",
       "community": 11,
-      "norm_label": "openaiembeddings",
-      "community_name": "OpenAI Embeddings",
-      "id": "openaiembeddings"
+      "community_name": ".get_embeddings",
+      "norm_label": "openaiembeddings"
     },
     {
       "label": "build_sql_prompt()",
@@ -540,10 +540,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L99",
       "_origin": "ast",
+      "id": "src_querysmith_llm_build_sql_prompt",
       "community": 5,
-      "norm_label": "build_sql_prompt()",
       "community_name": "SQL Prompt Building",
-      "id": "src_querysmith_llm_build_sql_prompt"
+      "norm_label": "build_sql_prompt()"
     },
     {
       "label": "generate_sql()",
@@ -551,10 +551,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L133",
       "_origin": "ast",
+      "id": "src_querysmith_llm_generate_sql",
       "community": 6,
-      "norm_label": "generate_sql()",
       "community_name": "Safe SQL Generation",
-      "id": "src_querysmith_llm_generate_sql"
+      "norm_label": "generate_sql()"
     },
     {
       "label": "_clean_sql_response()",
@@ -562,10 +562,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L146",
       "_origin": "ast",
+      "id": "src_querysmith_llm_clean_sql_response",
       "community": 6,
-      "norm_label": "_clean_sql_response()",
       "community_name": "Safe SQL Generation",
-      "id": "src_querysmith_llm_clean_sql_response"
+      "norm_label": "_clean_sql_response()"
     },
     {
       "label": "_first_env_value()",
@@ -573,10 +573,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L161",
       "_origin": "ast",
+      "id": "src_querysmith_llm_first_env_value",
       "community": 4,
-      "norm_label": "_first_env_value()",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_first_env_value"
+      "norm_label": "_first_env_value()"
     },
     {
       "label": "Language model interface for safe SQL generation.",
@@ -584,10 +584,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_1",
       "community": 4,
-      "norm_label": "language model interface for safe sql generation.",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_rationale_1"
+      "norm_label": "language model interface for safe sql generation."
     },
     {
       "label": "Minimal client protocol used by SQL generation.",
@@ -595,10 +595,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L25",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_25",
       "community": 4,
-      "norm_label": "minimal client protocol used by sql generation.",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_rationale_25"
+      "norm_label": "minimal client protocol used by sql generation."
     },
     {
       "label": "Return a model completion for the provided prompt.",
@@ -606,10 +606,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L28",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_28",
       "community": 4,
-      "norm_label": "return a model completion for the provided prompt.",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_llm_rationale_28"
+      "norm_label": "return a model completion for the provided prompt."
     },
     {
       "label": "OpenAI-compatible client with AvalAI defaults.",
@@ -617,10 +617,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L32",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_32",
       "community": 7,
-      "norm_label": "openai-compatible client with avalai defaults.",
       "community_name": "OpenAI Client Compatibility",
-      "id": "src_querysmith_llm_rationale_32"
+      "norm_label": "openai-compatible client with avalai defaults."
     },
     {
       "label": "Return a chat completion for the prompt.",
@@ -628,10 +628,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L63",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_63",
       "community": 7,
-      "norm_label": "return a chat completion for the prompt.",
       "community_name": "OpenAI Client Compatibility",
-      "id": "src_querysmith_llm_rationale_63"
+      "norm_label": "return a chat completion for the prompt."
     },
     {
       "label": "Return a LangChain chat model configured like this client.",
@@ -639,10 +639,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 14,
-      "norm_label": "return a langchain chat model configured like this client.",
-      "community_name": ".get_model",
-      "id": "src_querysmith_llm_rationale_80"
+      "id": "src_querysmith_llm_rationale_80",
+      "community": 10,
+      "community_name": "load_config",
+      "norm_label": "return a langchain chat model configured like this client."
     },
     {
       "label": "Return LangChain OpenAI-compatible embeddings.",
@@ -650,10 +650,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L90",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_90",
       "community": 11,
-      "norm_label": "return langchain openai-compatible embeddings.",
-      "community_name": "OpenAI Embeddings",
-      "id": "src_querysmith_llm_rationale_90"
+      "community_name": ".get_embeddings",
+      "norm_label": "return langchain openai-compatible embeddings."
     },
     {
       "label": "Build the SQL Server query-generation prompt.",
@@ -661,10 +661,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L100",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_100",
       "community": 5,
-      "norm_label": "build the sql server query-generation prompt.",
       "community_name": "SQL Prompt Building",
-      "id": "src_querysmith_llm_rationale_100"
+      "norm_label": "build the sql server query-generation prompt."
     },
     {
       "label": "Generate and validate a safe SQL Server SELECT query.",
@@ -672,10 +672,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L138",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_138",
       "community": 6,
-      "norm_label": "generate and validate a safe sql server select query.",
       "community_name": "Safe SQL Generation",
-      "id": "src_querysmith_llm_rationale_138"
+      "norm_label": "generate and validate a safe sql server select query."
     },
     {
       "label": "Strip whitespace and remove one surrounding markdown SQL fence.",
@@ -683,10 +683,10 @@
       "source_file": "src/querysmith/llm.py",
       "source_location": "L147",
       "_origin": "ast",
+      "id": "src_querysmith_llm_rationale_147",
       "community": 6,
-      "norm_label": "strip whitespace and remove one surrounding markdown sql fence.",
       "community_name": "Safe SQL Generation",
-      "id": "src_querysmith_llm_rationale_147"
+      "norm_label": "strip whitespace and remove one surrounding markdown sql fence."
     },
     {
       "label": "models.py",
@@ -694,10 +694,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_models",
       "community": 1,
-      "norm_label": "models.py",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models"
+      "norm_label": "models.py"
     },
     {
       "label": "Column",
@@ -705,10 +705,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "src_querysmith_models_column",
       "community": 1,
-      "norm_label": "column",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_column"
+      "norm_label": "column"
     },
     {
       "label": "ForeignKey",
@@ -716,10 +716,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L18",
       "_origin": "ast",
+      "id": "src_querysmith_models_foreignkey",
       "community": 1,
-      "norm_label": "foreignkey",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_foreignkey"
+      "norm_label": "foreignkey"
     },
     {
       "label": "Table",
@@ -727,10 +727,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L27",
       "_origin": "ast",
+      "id": "src_querysmith_models_table",
       "community": 1,
-      "norm_label": "table",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_table"
+      "norm_label": "table"
     },
     {
       "label": ".full_name()",
@@ -738,10 +738,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L37",
       "_origin": "ast",
+      "id": "src_querysmith_models_table_full_name",
       "community": 1,
-      "norm_label": ".full_name()",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_table_full_name"
+      "norm_label": ".full_name()"
     },
     {
       "label": "Schema data models for QuerySmith.",
@@ -749,10 +749,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_models_rationale_1",
       "community": 1,
-      "norm_label": "schema data models for querysmith.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_rationale_1"
+      "norm_label": "schema data models for querysmith."
     },
     {
       "label": "A SQL Server table column.",
@@ -760,10 +760,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L8",
       "_origin": "ast",
+      "id": "src_querysmith_models_rationale_8",
       "community": 1,
-      "norm_label": "a sql server table column.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_rationale_8"
+      "norm_label": "a sql server table column."
     },
     {
       "label": "A SQL Server foreign key relationship.",
@@ -771,10 +771,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L19",
       "_origin": "ast",
+      "id": "src_querysmith_models_rationale_19",
       "community": 1,
-      "norm_label": "a sql server foreign key relationship.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_rationale_19"
+      "norm_label": "a sql server foreign key relationship."
     },
     {
       "label": "A SQL Server table with columns and foreign keys.",
@@ -782,10 +782,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L28",
       "_origin": "ast",
+      "id": "src_querysmith_models_rationale_28",
       "community": 1,
-      "norm_label": "a sql server table with columns and foreign keys.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_rationale_28"
+      "norm_label": "a sql server table with columns and foreign keys."
     },
     {
       "label": "Return the schema-qualified table name.",
@@ -793,10 +793,10 @@
       "source_file": "src/querysmith/models.py",
       "source_location": "L38",
       "_origin": "ast",
+      "id": "src_querysmith_models_rationale_38",
       "community": 1,
-      "norm_label": "return the schema-qualified table name.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_models_rationale_38"
+      "norm_label": "return the schema-qualified table name."
     },
     {
       "label": "pipeline.py",
@@ -804,10 +804,10 @@
       "source_file": "src/querysmith/pipeline.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline",
       "community": 4,
-      "norm_label": "pipeline.py",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_pipeline"
+      "norm_label": "pipeline.py"
     },
     {
       "label": "generate_query()",
@@ -815,10 +815,10 @@
       "source_file": "src/querysmith/pipeline.py",
       "source_location": "L11",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline_generate_query",
       "community": 2,
-      "norm_label": "generate_query()",
       "community_name": "Query Execution and Generation",
-      "id": "src_querysmith_pipeline_generate_query"
+      "norm_label": "generate_query()"
     },
     {
       "label": "Engine",
@@ -826,10 +826,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline_py_engine",
       "community": 2,
-      "norm_label": "engine",
       "community_name": "Query Execution and Generation",
-      "id": "src_querysmith_pipeline_py_engine"
+      "norm_label": "engine"
     },
     {
       "label": "execute_select()",
@@ -837,10 +837,10 @@
       "source_file": "src/querysmith/pipeline.py",
       "source_location": "L24",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline_execute_select",
       "community": 2,
-      "norm_label": "execute_select()",
       "community_name": "Query Execution and Generation",
-      "id": "src_querysmith_pipeline_execute_select"
+      "norm_label": "execute_select()"
     },
     {
       "label": "Orchestration helpers for QuerySmith query generation and execution.",
@@ -848,10 +848,10 @@
       "source_file": "src/querysmith/pipeline.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline_rationale_1",
       "community": 4,
-      "norm_label": "orchestration helpers for querysmith query generation and execution.",
       "community_name": "OpenAI Integration",
-      "id": "src_querysmith_pipeline_rationale_1"
+      "norm_label": "orchestration helpers for querysmith query generation and execution."
     },
     {
       "label": "Generate a safe SQL query from a question and database schema.",
@@ -859,10 +859,10 @@
       "source_file": "src/querysmith/pipeline.py",
       "source_location": "L17",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline_rationale_17",
       "community": 2,
-      "norm_label": "generate a safe sql query from a question and database schema.",
       "community_name": "Query Execution and Generation",
-      "id": "src_querysmith_pipeline_rationale_17"
+      "norm_label": "generate a safe sql query from a question and database schema."
     },
     {
       "label": "Validate and execute a SELECT query with a conservative row limit.",
@@ -870,10 +870,10 @@
       "source_file": "src/querysmith/pipeline.py",
       "source_location": "L29",
       "_origin": "ast",
+      "id": "src_querysmith_pipeline_rationale_29",
       "community": 2,
-      "norm_label": "validate and execute a select query with a conservative row limit.",
       "community_name": "Query Execution and Generation",
-      "id": "src_querysmith_pipeline_rationale_29"
+      "norm_label": "validate and execute a select query with a conservative row limit."
     },
     {
       "label": "serializer.py",
@@ -881,10 +881,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_serializer",
       "community": 1,
-      "norm_label": "serializer.py",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer"
+      "norm_label": "serializer.py"
     },
     {
       "label": "serialize_schema()",
@@ -892,10 +892,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L6",
       "_origin": "ast",
+      "id": "src_querysmith_serializer_serialize_schema",
       "community": 1,
-      "norm_label": "serialize_schema()",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer_serialize_schema"
+      "norm_label": "serialize_schema()"
     },
     {
       "label": "_serialize_column()",
@@ -903,10 +903,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L49",
       "_origin": "ast",
+      "id": "src_querysmith_serializer_serialize_column",
       "community": 1,
-      "norm_label": "_serialize_column()",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer_serialize_column"
+      "norm_label": "_serialize_column()"
     },
     {
       "label": "_qualified_table_name()",
@@ -914,10 +914,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L73",
       "_origin": "ast",
+      "id": "src_querysmith_serializer_qualified_table_name",
       "community": 1,
-      "norm_label": "_qualified_table_name()",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer_qualified_table_name"
+      "norm_label": "_qualified_table_name()"
     },
     {
       "label": "_qualified_referenced_table()",
@@ -925,10 +925,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L77",
       "_origin": "ast",
+      "id": "src_querysmith_serializer_qualified_referenced_table",
       "community": 1,
-      "norm_label": "_qualified_referenced_table()",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer_qualified_referenced_table"
+      "norm_label": "_qualified_referenced_table()"
     },
     {
       "label": "Serialize schema metadata for prompt context.",
@@ -936,10 +936,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "src_querysmith_serializer_rationale_1",
       "community": 1,
-      "norm_label": "serialize schema metadata for prompt context.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer_rationale_1"
+      "norm_label": "serialize schema metadata for prompt context."
     },
     {
       "label": "Convert introspected tables into compact, deterministic text.",
@@ -947,10 +947,10 @@
       "source_file": "src/querysmith/serializer.py",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "src_querysmith_serializer_rationale_7",
       "community": 1,
-      "norm_label": "convert introspected tables into compact, deterministic text.",
       "community_name": "Database Schema Metadata",
-      "id": "src_querysmith_serializer_rationale_7"
+      "norm_label": "convert introspected tables into compact, deterministic text."
     },
     {
       "label": "test_config.py",
@@ -958,10 +958,10 @@
       "source_file": "tests/test_config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "test_config.py",
-      "community_name": "load_config",
-      "id": "tests_test_config"
+      "id": "tests_test_config",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "test_config.py"
     },
     {
       "label": "test_config_parses_trusted_flag()",
@@ -969,10 +969,10 @@
       "source_file": "tests/test_config.py",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "test_config_parses_trusted_flag()",
-      "community_name": "load_config",
-      "id": "tests_test_config_test_config_parses_trusted_flag"
+      "id": "tests_test_config_test_config_parses_trusted_flag",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "test_config_parses_trusted_flag()"
     },
     {
       "label": "MonkeyPatch",
@@ -980,10 +980,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "monkeypatch",
-      "community_name": "load_config",
-      "id": "tests_test_config_py_monkeypatch"
+      "id": "tests_test_config_py_monkeypatch",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "monkeypatch"
     },
     {
       "label": "test_config_supports_env_example_names()",
@@ -991,10 +991,10 @@
       "source_file": "tests/test_config.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "test_config_supports_env_example_names()",
-      "community_name": "load_config",
-      "id": "tests_test_config_test_config_supports_env_example_names"
+      "id": "tests_test_config_test_config_supports_env_example_names",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "test_config_supports_env_example_names()"
     },
     {
       "label": "Tests for QuerySmith configuration loading.",
@@ -1002,10 +1002,10 @@
       "source_file": "tests/test_config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "tests for querysmith configuration loading.",
-      "community_name": "load_config",
-      "id": "tests_test_config_rationale_1"
+      "id": "tests_test_config_rationale_1",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "tests for querysmith configuration loading."
     },
     {
       "label": "The DB_TRUSTED_CONNECTION flag should parse common true values.",
@@ -1013,10 +1013,10 @@
       "source_file": "tests/test_config.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "the db_trusted_connection flag should parse common true values.",
-      "community_name": "load_config",
-      "id": "tests_test_config_rationale_9"
+      "id": "tests_test_config_rationale_9",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "the db_trusted_connection flag should parse common true values."
     },
     {
       "label": "The documented DB_HOST-style variables should load correctly.",
@@ -1024,10 +1024,10 @@
       "source_file": "tests/test_config.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 10,
-      "norm_label": "the documented db_host-style variables should load correctly.",
-      "community_name": "load_config",
-      "id": "tests_test_config_rationale_23"
+      "id": "tests_test_config_rationale_23",
+      "community": 0,
+      "community_name": "Configuration Management",
+      "norm_label": "the documented db_host-style variables should load correctly."
     },
     {
       "label": "test_db.py",
@@ -1035,10 +1035,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_db",
       "community": 0,
-      "norm_label": "test_db.py",
       "community_name": "Configuration Management",
-      "id": "tests_test_db"
+      "norm_label": "test_db.py"
     },
     {
       "label": "test_build_url_sql_auth()",
@@ -1046,10 +1046,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "tests_test_db_test_build_url_sql_auth",
       "community": 0,
-      "norm_label": "test_build_url_sql_auth()",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_test_build_url_sql_auth"
+      "norm_label": "test_build_url_sql_auth()"
     },
     {
       "label": "test_build_url_trusted()",
@@ -1057,10 +1057,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L24",
       "_origin": "ast",
+      "id": "tests_test_db_test_build_url_trusted",
       "community": 0,
-      "norm_label": "test_build_url_trusted()",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_test_build_url_trusted"
+      "norm_label": "test_build_url_trusted()"
     },
     {
       "label": "test_build_url_named_instance()",
@@ -1068,10 +1068,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L42",
       "_origin": "ast",
+      "id": "tests_test_db_test_build_url_named_instance",
       "community": 0,
-      "norm_label": "test_build_url_named_instance()",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_test_build_url_named_instance"
+      "norm_label": "test_build_url_named_instance()"
     },
     {
       "label": "Tests for QuerySmith database helpers.",
@@ -1079,10 +1079,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_db_rationale_1",
       "community": 0,
-      "norm_label": "tests for querysmith database helpers.",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_rationale_1"
+      "norm_label": "tests for querysmith database helpers."
     },
     {
       "label": "SQL authentication should include UID and PWD.",
@@ -1090,10 +1090,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L8",
       "_origin": "ast",
+      "id": "tests_test_db_rationale_8",
       "community": 0,
-      "norm_label": "sql authentication should include uid and pwd.",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_rationale_8"
+      "norm_label": "sql authentication should include uid and pwd."
     },
     {
       "label": "Trusted authentication should omit UID and PWD.",
@@ -1101,10 +1101,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L25",
       "_origin": "ast",
+      "id": "tests_test_db_rationale_25",
       "community": 0,
-      "norm_label": "trusted authentication should omit uid and pwd.",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_rationale_25"
+      "norm_label": "trusted authentication should omit uid and pwd."
     },
     {
       "label": "SQL Server instance names should be preserved in the ODBC string.",
@@ -1112,10 +1112,10 @@
       "source_file": "tests/test_db.py",
       "source_location": "L43",
       "_origin": "ast",
+      "id": "tests_test_db_rationale_43",
       "community": 0,
-      "norm_label": "sql server instance names should be preserved in the odbc string.",
       "community_name": "Configuration Management",
-      "id": "tests_test_db_rationale_43"
+      "norm_label": "sql server instance names should be preserved in the odbc string."
     },
     {
       "label": "test_guard.py",
@@ -1123,10 +1123,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_guard",
       "community": 3,
-      "norm_label": "test_guard.py",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard"
+      "norm_label": "test_guard.py"
     },
     {
       "label": "test_accept_simple_select()",
@@ -1134,10 +1134,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L8",
       "_origin": "ast",
+      "id": "tests_test_guard_test_accept_simple_select",
       "community": 3,
-      "norm_label": "test_accept_simple_select()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_accept_simple_select"
+      "norm_label": "test_accept_simple_select()"
     },
     {
       "label": "test_accept_select_with_trailing_semicolon()",
@@ -1145,10 +1145,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L12",
       "_origin": "ast",
+      "id": "tests_test_guard_test_accept_select_with_trailing_semicolon",
       "community": 3,
-      "norm_label": "test_accept_select_with_trailing_semicolon()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_accept_select_with_trailing_semicolon"
+      "norm_label": "test_accept_select_with_trailing_semicolon()"
     },
     {
       "label": "test_accept_with_cte_select()",
@@ -1156,10 +1156,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L16",
       "_origin": "ast",
+      "id": "tests_test_guard_test_accept_with_cte_select",
       "community": 3,
-      "norm_label": "test_accept_with_cte_select()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_accept_with_cte_select"
+      "norm_label": "test_accept_with_cte_select()"
     },
     {
       "label": "test_reject_empty_sql()",
@@ -1167,10 +1167,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L36",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_empty_sql",
       "community": 3,
-      "norm_label": "test_reject_empty_sql()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_empty_sql"
+      "norm_label": "test_reject_empty_sql()"
     },
     {
       "label": "test_reject_dangerous_write_keywords()",
@@ -1178,10 +1178,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L50",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_dangerous_write_keywords",
       "community": 3,
-      "norm_label": "test_reject_dangerous_write_keywords()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_dangerous_write_keywords"
+      "norm_label": "test_reject_dangerous_write_keywords()"
     },
     {
       "label": "test_reject_select_into()",
@@ -1189,10 +1189,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L55",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_select_into",
       "community": 3,
-      "norm_label": "test_reject_select_into()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_select_into"
+      "norm_label": "test_reject_select_into()"
     },
     {
       "label": "test_reject_multiple_statements()",
@@ -1200,10 +1200,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L60",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_multiple_statements",
       "community": 3,
-      "norm_label": "test_reject_multiple_statements()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_multiple_statements"
+      "norm_label": "test_reject_multiple_statements()"
     },
     {
       "label": "test_reject_line_comments()",
@@ -1211,10 +1211,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L65",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_line_comments",
       "community": 3,
-      "norm_label": "test_reject_line_comments()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_line_comments"
+      "norm_label": "test_reject_line_comments()"
     },
     {
       "label": "test_reject_block_comments()",
@@ -1222,10 +1222,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L70",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_block_comments",
       "community": 3,
-      "norm_label": "test_reject_block_comments()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_block_comments"
+      "norm_label": "test_reject_block_comments()"
     },
     {
       "label": "test_reject_exec()",
@@ -1233,10 +1233,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L75",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_exec",
       "community": 3,
-      "norm_label": "test_reject_exec()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_exec"
+      "norm_label": "test_reject_exec()"
     },
     {
       "label": "test_reject_use_database()",
@@ -1244,10 +1244,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L80",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_use_database",
       "community": 3,
-      "norm_label": "test_reject_use_database()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_use_database"
+      "norm_label": "test_reject_use_database()"
     },
     {
       "label": "test_reject_query_starting_with_non_select_or_with()",
@@ -1255,10 +1255,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L85",
       "_origin": "ast",
+      "id": "tests_test_guard_test_reject_query_starting_with_non_select_or_with",
       "community": 3,
-      "norm_label": "test_reject_query_starting_with_non_select_or_with()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_reject_query_starting_with_non_select_or_with"
+      "norm_label": "test_reject_query_starting_with_non_select_or_with()"
     },
     {
       "label": "test_returned_sql_is_stripped_and_trailing_semicolon_removed()",
@@ -1266,10 +1266,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L90",
       "_origin": "ast",
+      "id": "tests_test_guard_test_returned_sql_is_stripped_and_trailing_semicolon_removed",
       "community": 3,
-      "norm_label": "test_returned_sql_is_stripped_and_trailing_semicolon_removed()",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_test_returned_sql_is_stripped_and_trailing_semicolon_removed"
+      "norm_label": "test_returned_sql_is_stripped_and_trailing_semicolon_removed()"
     },
     {
       "label": "Tests for SQL safety guardrails.",
@@ -1277,10 +1277,10 @@
       "source_file": "tests/test_guard.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_guard_rationale_1",
       "community": 3,
-      "norm_label": "tests for sql safety guardrails.",
       "community_name": "SQL Safety Validation",
-      "id": "tests_test_guard_rationale_1"
+      "norm_label": "tests for sql safety guardrails."
     },
     {
       "label": "test_llm.py",
@@ -1288,10 +1288,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_llm",
       "community": 5,
-      "norm_label": "test_llm.py",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm"
+      "norm_label": "test_llm.py"
     },
     {
       "label": "FakeClient",
@@ -1299,10 +1299,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L29",
       "_origin": "ast",
+      "id": "tests_test_llm_fakeclient",
       "community": 6,
-      "norm_label": "fakeclient",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_fakeclient"
+      "norm_label": "fakeclient"
     },
     {
       "label": ".__init__()",
@@ -1310,10 +1310,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L30",
       "_origin": "ast",
+      "id": "tests_test_llm_fakeclient_init",
       "community": 6,
-      "norm_label": ".__init__()",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_fakeclient_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": ".complete()",
@@ -1321,10 +1321,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L34",
       "_origin": "ast",
+      "id": "tests_test_llm_fakeclient_complete",
       "community": 9,
-      "norm_label": ".complete()",
       "community_name": "OpenAI Client Testing",
-      "id": "tests_test_llm_fakeclient_complete"
+      "norm_label": ".complete()"
     },
     {
       "label": "test_build_sql_prompt_includes_user_question()",
@@ -1332,10 +1332,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L39",
       "_origin": "ast",
+      "id": "tests_test_llm_test_build_sql_prompt_includes_user_question",
       "community": 5,
-      "norm_label": "test_build_sql_prompt_includes_user_question()",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_test_build_sql_prompt_includes_user_question"
+      "norm_label": "test_build_sql_prompt_includes_user_question()"
     },
     {
       "label": "test_build_sql_prompt_includes_schema_text()",
@@ -1343,10 +1343,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L45",
       "_origin": "ast",
+      "id": "tests_test_llm_test_build_sql_prompt_includes_schema_text",
       "community": 5,
-      "norm_label": "test_build_sql_prompt_includes_schema_text()",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_test_build_sql_prompt_includes_schema_text"
+      "norm_label": "test_build_sql_prompt_includes_schema_text()"
     },
     {
       "label": "test_build_sql_prompt_mentions_sql_server_or_tsql()",
@@ -1354,10 +1354,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L51",
       "_origin": "ast",
+      "id": "tests_test_llm_test_build_sql_prompt_mentions_sql_server_or_tsql",
       "community": 5,
-      "norm_label": "test_build_sql_prompt_mentions_sql_server_or_tsql()",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_test_build_sql_prompt_mentions_sql_server_or_tsql"
+      "norm_label": "test_build_sql_prompt_mentions_sql_server_or_tsql()"
     },
     {
       "label": "test_build_sql_prompt_says_output_sql_only()",
@@ -1365,10 +1365,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L57",
       "_origin": "ast",
+      "id": "tests_test_llm_test_build_sql_prompt_says_output_sql_only",
       "community": 5,
-      "norm_label": "test_build_sql_prompt_says_output_sql_only()",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_test_build_sql_prompt_says_output_sql_only"
+      "norm_label": "test_build_sql_prompt_says_output_sql_only()"
     },
     {
       "label": "test_generate_sql_returns_safe_select_from_fake_client()",
@@ -1376,10 +1376,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L63",
       "_origin": "ast",
+      "id": "tests_test_llm_test_generate_sql_returns_safe_select_from_fake_client",
       "community": 6,
-      "norm_label": "test_generate_sql_returns_safe_select_from_fake_client()",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_test_generate_sql_returns_safe_select_from_fake_client"
+      "norm_label": "test_generate_sql_returns_safe_select_from_fake_client()"
     },
     {
       "label": "test_generate_sql_removes_markdown_sql_fences()",
@@ -1387,10 +1387,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L71",
       "_origin": "ast",
+      "id": "tests_test_llm_test_generate_sql_removes_markdown_sql_fences",
       "community": 6,
-      "norm_label": "test_generate_sql_removes_markdown_sql_fences()",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_test_generate_sql_removes_markdown_sql_fences"
+      "norm_label": "test_generate_sql_removes_markdown_sql_fences()"
     },
     {
       "label": "test_generate_sql_raises_for_delete()",
@@ -1398,10 +1398,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L85",
       "_origin": "ast",
+      "id": "tests_test_llm_test_generate_sql_raises_for_delete",
       "community": 6,
-      "norm_label": "test_generate_sql_raises_for_delete()",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_test_generate_sql_raises_for_delete"
+      "norm_label": "test_generate_sql_raises_for_delete()"
     },
     {
       "label": "test_generate_sql_raises_for_multiple_statements()",
@@ -1409,10 +1409,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L92",
       "_origin": "ast",
+      "id": "tests_test_llm_test_generate_sql_raises_for_multiple_statements",
       "community": 6,
-      "norm_label": "test_generate_sql_raises_for_multiple_statements()",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_test_generate_sql_raises_for_multiple_statements"
+      "norm_label": "test_generate_sql_raises_for_multiple_statements()"
     },
     {
       "label": "test_generate_sql_sends_prompt_to_client()",
@@ -1420,10 +1420,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L99",
       "_origin": "ast",
+      "id": "tests_test_llm_test_generate_sql_sends_prompt_to_client",
       "community": 6,
-      "norm_label": "test_generate_sql_sends_prompt_to_client()",
       "community_name": "Safe SQL Generation",
-      "id": "tests_test_llm_test_generate_sql_sends_prompt_to_client"
+      "norm_label": "test_generate_sql_sends_prompt_to_client()"
     },
     {
       "label": "test_openai_compatible_client_accepts_explicit_config()",
@@ -1431,10 +1431,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L109",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_accepts_explicit_config",
       "community": 7,
-      "norm_label": "test_openai_compatible_client_accepts_explicit_config()",
       "community_name": "OpenAI Client Compatibility",
-      "id": "tests_test_llm_test_openai_compatible_client_accepts_explicit_config"
+      "norm_label": "test_openai_compatible_client_accepts_explicit_config()"
     },
     {
       "label": "test_openai_compatible_client_default_base_url()",
@@ -1442,10 +1442,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L121",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_default_base_url",
       "community": 7,
-      "norm_label": "test_openai_compatible_client_default_base_url()",
       "community_name": "OpenAI Client Compatibility",
-      "id": "tests_test_llm_test_openai_compatible_client_default_base_url"
+      "norm_label": "test_openai_compatible_client_default_base_url()"
     },
     {
       "label": "MonkeyPatch",
@@ -1453,10 +1453,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "tests_test_llm_py_monkeypatch",
       "community": 7,
-      "norm_label": "monkeypatch",
       "community_name": "OpenAI Client Compatibility",
-      "id": "tests_test_llm_py_monkeypatch"
+      "norm_label": "monkeypatch"
     },
     {
       "label": "test_openai_compatible_client_env_vars_override_defaults()",
@@ -1464,10 +1464,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L132",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults",
       "community": 7,
-      "norm_label": "test_openai_compatible_client_env_vars_override_defaults()",
       "community_name": "OpenAI Client Compatibility",
-      "id": "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults"
+      "norm_label": "test_openai_compatible_client_env_vars_override_defaults()"
     },
     {
       "label": "test_openai_compatible_client_explicit_args_override_env_vars()",
@@ -1475,10 +1475,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L146",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars",
       "community": 7,
-      "norm_label": "test_openai_compatible_client_explicit_args_override_env_vars()",
       "community_name": "OpenAI Client Compatibility",
-      "id": "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars"
+      "norm_label": "test_openai_compatible_client_explicit_args_override_env_vars()"
     },
     {
       "label": "test_openai_compatible_client_requires_api_key()",
@@ -1486,10 +1486,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L164",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_requires_api_key",
       "community": 7,
-      "norm_label": "test_openai_compatible_client_requires_api_key()",
       "community_name": "OpenAI Client Compatibility",
-      "id": "tests_test_llm_test_openai_compatible_client_requires_api_key"
+      "norm_label": "test_openai_compatible_client_requires_api_key()"
     },
     {
       "label": "test_openai_compatible_client_complete_uses_internal_client()",
@@ -1497,10 +1497,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L175",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client",
       "community": 9,
-      "norm_label": "test_openai_compatible_client_complete_uses_internal_client()",
       "community_name": "OpenAI Client Testing",
-      "id": "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client"
+      "norm_label": "test_openai_compatible_client_complete_uses_internal_client()"
     },
     {
       "label": "test_openai_compatible_client_complete_rejects_empty_response()",
@@ -1508,10 +1508,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L189",
       "_origin": "ast",
+      "id": "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response",
       "community": 9,
-      "norm_label": "test_openai_compatible_client_complete_rejects_empty_response()",
       "community_name": "OpenAI Client Testing",
-      "id": "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response"
+      "norm_label": "test_openai_compatible_client_complete_rejects_empty_response()"
     },
     {
       "label": "FakeMessage",
@@ -1519,10 +1519,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L202",
       "_origin": "ast",
+      "id": "tests_test_llm_fakemessage",
       "community": 5,
-      "norm_label": "fakemessage",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_fakemessage"
+      "norm_label": "fakemessage"
     },
     {
       "label": "FakeChoice",
@@ -1530,10 +1530,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L207",
       "_origin": "ast",
+      "id": "tests_test_llm_fakechoice",
       "community": 5,
-      "norm_label": "fakechoice",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_fakechoice"
+      "norm_label": "fakechoice"
     },
     {
       "label": "FakeCompletion",
@@ -1541,10 +1541,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L212",
       "_origin": "ast",
+      "id": "tests_test_llm_fakecompletion",
       "community": 5,
-      "norm_label": "fakecompletion",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_fakecompletion"
+      "norm_label": "fakecompletion"
     },
     {
       "label": "FakeCompletions",
@@ -1552,10 +1552,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L216",
       "_origin": "ast",
+      "id": "tests_test_llm_fakecompletions",
       "community": 8,
-      "norm_label": "fakecompletions",
       "community_name": "Fake Chat Components",
-      "id": "tests_test_llm_fakecompletions"
+      "norm_label": "fakecompletions"
     },
     {
       "label": ".__init__()",
@@ -1563,10 +1563,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L217",
       "_origin": "ast",
+      "id": "tests_test_llm_fakecompletions_init",
       "community": 8,
-      "norm_label": ".__init__()",
       "community_name": "Fake Chat Components",
-      "id": "tests_test_llm_fakecompletions_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": ".create()",
@@ -1574,10 +1574,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L222",
       "_origin": "ast",
+      "id": "tests_test_llm_fakecompletions_create",
       "community": 5,
-      "norm_label": ".create()",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_fakecompletions_create"
+      "norm_label": ".create()"
     },
     {
       "label": "FakeChat",
@@ -1585,10 +1585,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L235",
       "_origin": "ast",
+      "id": "tests_test_llm_fakechat",
       "community": 8,
-      "norm_label": "fakechat",
       "community_name": "Fake Chat Components",
-      "id": "tests_test_llm_fakechat"
+      "norm_label": "fakechat"
     },
     {
       "label": ".__init__()",
@@ -1596,10 +1596,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L236",
       "_origin": "ast",
+      "id": "tests_test_llm_fakechat_init",
       "community": 8,
-      "norm_label": ".__init__()",
       "community_name": "Fake Chat Components",
-      "id": "tests_test_llm_fakechat_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": "FakeOpenAIChatClient",
@@ -1607,10 +1607,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L240",
       "_origin": "ast",
+      "id": "tests_test_llm_fakeopenaichatclient",
       "community": 9,
-      "norm_label": "fakeopenaichatclient",
       "community_name": "OpenAI Client Testing",
-      "id": "tests_test_llm_fakeopenaichatclient"
+      "norm_label": "fakeopenaichatclient"
     },
     {
       "label": ".__init__()",
@@ -1618,10 +1618,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L241",
       "_origin": "ast",
+      "id": "tests_test_llm_fakeopenaichatclient_init",
       "community": 8,
-      "norm_label": ".__init__()",
       "community_name": "Fake Chat Components",
-      "id": "tests_test_llm_fakeopenaichatclient_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": "Tests for language model SQL generation.",
@@ -1629,10 +1629,10 @@
       "source_file": "tests/test_llm.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_llm_rationale_1",
       "community": 5,
-      "norm_label": "tests for language model sql generation.",
       "community_name": "SQL Prompt Building",
-      "id": "tests_test_llm_rationale_1"
+      "norm_label": "tests for language model sql generation."
     },
     {
       "label": "test_models.py",
@@ -1640,10 +1640,10 @@
       "source_file": "tests/test_models.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_models",
       "community": 1,
-      "norm_label": "test_models.py",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_models"
+      "norm_label": "test_models.py"
     },
     {
       "label": "test_table_full_name_and_schema_fields()",
@@ -1651,10 +1651,10 @@
       "source_file": "tests/test_models.py",
       "source_location": "L6",
       "_origin": "ast",
+      "id": "tests_test_models_test_table_full_name_and_schema_fields",
       "community": 1,
-      "norm_label": "test_table_full_name_and_schema_fields()",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_models_test_table_full_name_and_schema_fields"
+      "norm_label": "test_table_full_name_and_schema_fields()"
     },
     {
       "label": "Tests for QuerySmith schema data models.",
@@ -1662,10 +1662,10 @@
       "source_file": "tests/test_models.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_models_rationale_1",
       "community": 1,
-      "norm_label": "tests for querysmith schema data models.",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_models_rationale_1"
+      "norm_label": "tests for querysmith schema data models."
     },
     {
       "label": "A table exposes its schema-qualified name and stored metadata.",
@@ -1673,10 +1673,10 @@
       "source_file": "tests/test_models.py",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "tests_test_models_rationale_7",
       "community": 1,
-      "norm_label": "a table exposes its schema-qualified name and stored metadata.",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_models_rationale_7"
+      "norm_label": "a table exposes its schema-qualified name and stored metadata."
     },
     {
       "label": "test_pipeline.py",
@@ -1684,10 +1684,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_pipeline",
       "community": 2,
-      "norm_label": "test_pipeline.py",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline"
+      "norm_label": "test_pipeline.py"
     },
     {
       "label": "FakeClient",
@@ -1695,10 +1695,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L12",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeclient",
       "community": 2,
-      "norm_label": "fakeclient",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeclient"
+      "norm_label": "fakeclient"
     },
     {
       "label": ".__init__()",
@@ -1706,10 +1706,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L13",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeclient_init",
       "community": 2,
-      "norm_label": ".__init__()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeclient_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": ".complete()",
@@ -1717,10 +1717,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L17",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeclient_complete",
       "community": 2,
-      "norm_label": ".complete()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeclient_complete"
+      "norm_label": ".complete()"
     },
     {
       "label": "FakeEngine",
@@ -1728,10 +1728,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L22",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeengine",
       "community": 2,
-      "norm_label": "fakeengine",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeengine"
+      "norm_label": "fakeengine"
     },
     {
       "label": ".__init__()",
@@ -1739,10 +1739,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L23",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeengine_init",
       "community": 2,
-      "norm_label": ".__init__()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeengine_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": ".connect()",
@@ -1750,10 +1750,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L27",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeengine_connect",
       "community": 2,
-      "norm_label": ".connect()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeengine_connect"
+      "norm_label": ".connect()"
     },
     {
       "label": "FakeConnection",
@@ -1761,10 +1761,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L32",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeconnection",
       "community": 2,
-      "norm_label": "fakeconnection",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeconnection"
+      "norm_label": "fakeconnection"
     },
     {
       "label": ".__init__()",
@@ -1772,10 +1772,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L33",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeconnection_init",
       "community": 2,
-      "norm_label": ".__init__()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeconnection_init"
+      "norm_label": ".__init__()"
     },
     {
       "label": ".__enter__()",
@@ -1783,10 +1783,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L36",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeconnection_enter",
       "community": 2,
-      "norm_label": ".__enter__()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeconnection_enter"
+      "norm_label": ".__enter__()"
     },
     {
       "label": ".__exit__()",
@@ -1794,10 +1794,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L39",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeconnection_exit",
       "community": 2,
-      "norm_label": ".__exit__()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeconnection_exit"
+      "norm_label": ".__exit__()"
     },
     {
       "label": ".execute()",
@@ -1805,10 +1805,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L42",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeconnection_execute",
       "community": 2,
-      "norm_label": ".execute()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeconnection_execute"
+      "norm_label": ".execute()"
     },
     {
       "label": "FakeResult",
@@ -1816,10 +1816,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L47",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeresult",
       "community": 2,
-      "norm_label": "fakeresult",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeresult"
+      "norm_label": "fakeresult"
     },
     {
       "label": ".mappings()",
@@ -1827,10 +1827,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L48",
       "_origin": "ast",
+      "id": "tests_test_pipeline_fakeresult_mappings",
       "community": 2,
-      "norm_label": ".mappings()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_fakeresult_mappings"
+      "norm_label": ".mappings()"
     },
     {
       "label": "test_generate_query_returns_sql_from_fake_llm()",
@@ -1838,10 +1838,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L52",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm",
       "community": 2,
-      "norm_label": "test_generate_query_returns_sql_from_fake_llm()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm"
+      "norm_label": "test_generate_query_returns_sql_from_fake_llm()"
     },
     {
       "label": "MonkeyPatch",
@@ -1849,10 +1849,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "tests_test_pipeline_py_monkeypatch",
       "community": 2,
-      "norm_label": "monkeypatch",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_py_monkeypatch"
+      "norm_label": "monkeypatch"
     },
     {
       "label": "test_generate_query_passes_serialized_schema_to_llm()",
@@ -1860,10 +1860,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L72",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm",
       "community": 2,
-      "norm_label": "test_generate_query_passes_serialized_schema_to_llm()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm"
+      "norm_label": "test_generate_query_passes_serialized_schema_to_llm()"
     },
     {
       "label": "test_generate_query_does_not_execute_sql()",
@@ -1871,10 +1871,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L93",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_generate_query_does_not_execute_sql",
       "community": 2,
-      "norm_label": "test_generate_query_does_not_execute_sql()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_generate_query_does_not_execute_sql"
+      "norm_label": "test_generate_query_does_not_execute_sql()"
     },
     {
       "label": "test_generate_query_does_not_instantiate_openai_client()",
@@ -1882,10 +1882,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L108",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client",
       "community": 2,
-      "norm_label": "test_generate_query_does_not_instantiate_openai_client()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client"
+      "norm_label": "test_generate_query_does_not_instantiate_openai_client()"
     },
     {
       "label": "test_execute_select_rejects_unsafe_sql()",
@@ -1893,10 +1893,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L120",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_execute_select_rejects_unsafe_sql",
       "community": 2,
-      "norm_label": "test_execute_select_rejects_unsafe_sql()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_execute_select_rejects_unsafe_sql"
+      "norm_label": "test_execute_select_rejects_unsafe_sql()"
     },
     {
       "label": "test_execute_select_rejects_invalid_max_rows()",
@@ -1904,10 +1904,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L130",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_execute_select_rejects_invalid_max_rows",
       "community": 2,
-      "norm_label": "test_execute_select_rejects_invalid_max_rows()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_execute_select_rejects_invalid_max_rows"
+      "norm_label": "test_execute_select_rejects_invalid_max_rows()"
     },
     {
       "label": "test_execute_select_validates_sql_before_execution()",
@@ -1915,10 +1915,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L135",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_execute_select_validates_sql_before_execution",
       "community": 2,
-      "norm_label": "test_execute_select_validates_sql_before_execution()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_execute_select_validates_sql_before_execution"
+      "norm_label": "test_execute_select_validates_sql_before_execution()"
     },
     {
       "label": "test_execute_select_wraps_safe_sql_and_returns_rows()",
@@ -1926,10 +1926,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L144",
       "_origin": "ast",
+      "id": "tests_test_pipeline_test_execute_select_wraps_safe_sql_and_returns_rows",
       "community": 2,
-      "norm_label": "test_execute_select_wraps_safe_sql_and_returns_rows()",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_test_execute_select_wraps_safe_sql_and_returns_rows"
+      "norm_label": "test_execute_select_wraps_safe_sql_and_returns_rows()"
     },
     {
       "label": "Tests for QuerySmith pipeline helpers.",
@@ -1937,10 +1937,10 @@
       "source_file": "tests/test_pipeline.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_pipeline_rationale_1",
       "community": 2,
-      "norm_label": "tests for querysmith pipeline helpers.",
       "community_name": "Query Execution and Generation",
-      "id": "tests_test_pipeline_rationale_1"
+      "norm_label": "tests for querysmith pipeline helpers."
     },
     {
       "label": "test_serializer.py",
@@ -1948,10 +1948,10 @@
       "source_file": "tests/test_serializer.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_serializer",
       "community": 1,
-      "norm_label": "test_serializer.py",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_serializer"
+      "norm_label": "test_serializer.py"
     },
     {
       "label": "test_serialize_schema_returns_empty_marker_for_no_tables()",
@@ -1959,10 +1959,10 @@
       "source_file": "tests/test_serializer.py",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "tests_test_serializer_test_serialize_schema_returns_empty_marker_for_no_tables",
       "community": 1,
-      "norm_label": "test_serialize_schema_returns_empty_marker_for_no_tables()",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_serializer_test_serialize_schema_returns_empty_marker_for_no_tables"
+      "norm_label": "test_serialize_schema_returns_empty_marker_for_no_tables()"
     },
     {
       "label": "test_serialize_schema_is_compact_and_deterministic()",
@@ -1970,10 +1970,10 @@
       "source_file": "tests/test_serializer.py",
       "source_location": "L11",
       "_origin": "ast",
+      "id": "tests_test_serializer_test_serialize_schema_is_compact_and_deterministic",
       "community": 1,
-      "norm_label": "test_serialize_schema_is_compact_and_deterministic()",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_serializer_test_serialize_schema_is_compact_and_deterministic"
+      "norm_label": "test_serialize_schema_is_compact_and_deterministic()"
     },
     {
       "label": "test_serialize_schema_marks_no_relationships()",
@@ -1981,10 +1981,10 @@
       "source_file": "tests/test_serializer.py",
       "source_location": "L76",
       "_origin": "ast",
+      "id": "tests_test_serializer_test_serialize_schema_marks_no_relationships",
       "community": 1,
-      "norm_label": "test_serialize_schema_marks_no_relationships()",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_serializer_test_serialize_schema_marks_no_relationships"
+      "norm_label": "test_serialize_schema_marks_no_relationships()"
     },
     {
       "label": "Tests for schema serialization.",
@@ -1992,10 +1992,10 @@
       "source_file": "tests/test_serializer.py",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "tests_test_serializer_rationale_1",
       "community": 1,
-      "norm_label": "tests for schema serialization.",
       "community_name": "Database Schema Metadata",
-      "id": "tests_test_serializer_rationale_1"
+      "norm_label": "tests for schema serialization."
     },
     {
       "label": "QuerySmith",
@@ -2105,9 +2105,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "pytest",
-      "community_name": "load_config",
+      "community_name": "Configuration Management",
       "id": "pytest"
     }
   ],
@@ -2172,6 +2172,66 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "main_main",
+      "target": "src_querysmith_config_load_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "main_main",
+      "target": "src_querysmith_db_make_engine"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "main_main",
+      "target": "src_querysmith_llm_openaicompatibleclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "main_main",
+      "target": "src_querysmith_pipeline_execute_select"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "main_main",
+      "target": "src_querysmith_pipeline_generate_query"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "main.py",
@@ -2187,36 +2247,36 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/querysmith/__init__.py",
-      "source_location": "L13",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_init",
-      "target": "src_querysmith_config"
+      "target": "src_querysmith_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/querysmith/__init__.py",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_init",
-      "target": "src_querysmith_db"
+      "target": "src_querysmith_db",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/querysmith/__init__.py",
-      "source_location": "L15",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_init",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2225,9 +2285,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config",
-      "target": "src_querysmith_config_dbconfig"
+      "target": "src_querysmith_config_dbconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2236,9 +2296,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config",
-      "target": "src_querysmith_config_load_config"
+      "target": "src_querysmith_config_load_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2247,9 +2307,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config",
-      "target": "src_querysmith_config_parse_bool"
+      "target": "src_querysmith_config_parse_bool",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2258,9 +2318,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config_rationale_1",
-      "target": "src_querysmith_config"
+      "target": "src_querysmith_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2270,9 +2330,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db",
-      "target": "src_querysmith_config"
+      "target": "src_querysmith_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2282,9 +2342,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config",
-      "target": "src_querysmith_config"
+      "target": "src_querysmith_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2294,9 +2354,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db",
-      "target": "src_querysmith_config"
+      "target": "src_querysmith_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2306,9 +2366,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config_load_config",
-      "target": "src_querysmith_config_dbconfig"
+      "target": "src_querysmith_config_dbconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2317,9 +2377,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config_rationale_11",
-      "target": "src_querysmith_config_dbconfig"
+      "target": "src_querysmith_config_dbconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2329,9 +2389,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_build_url",
-      "target": "src_querysmith_config_dbconfig"
+      "target": "src_querysmith_config_dbconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2341,9 +2401,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_make_engine",
-      "target": "src_querysmith_config_dbconfig"
+      "target": "src_querysmith_config_dbconfig",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2389,9 +2449,9 @@
       "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config_load_config",
-      "target": "src_querysmith_config_parse_bool"
+      "target": "src_querysmith_config_parse_bool",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2400,9 +2460,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config_rationale_22",
-      "target": "src_querysmith_config_parse_bool"
+      "target": "src_querysmith_config_parse_bool",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2423,9 +2483,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_config_rationale_28",
-      "target": "src_querysmith_config_load_config"
+      "target": "src_querysmith_config_load_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2459,9 +2519,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db",
-      "target": "sqlalchemy"
+      "target": "sqlalchemy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2470,9 +2530,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db",
-      "target": "src_querysmith_db_build_url"
+      "target": "src_querysmith_db_build_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2481,9 +2541,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db",
-      "target": "src_querysmith_db_make_engine"
+      "target": "src_querysmith_db_make_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2492,9 +2552,9 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db",
-      "target": "src_querysmith_db_test_connection"
+      "target": "src_querysmith_db_test_connection",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2503,9 +2563,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_rationale_1",
-      "target": "src_querysmith_db"
+      "target": "src_querysmith_db",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2515,9 +2575,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db",
-      "target": "src_querysmith_db"
+      "target": "src_querysmith_db",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2527,9 +2587,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_build_url",
-      "target": "url"
+      "target": "url",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2539,9 +2599,9 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_make_engine",
-      "target": "src_querysmith_db_build_url"
+      "target": "src_querysmith_db_build_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2550,9 +2610,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_rationale_9",
-      "target": "src_querysmith_db_build_url"
+      "target": "src_querysmith_db_build_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2598,9 +2658,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_make_engine",
-      "target": "src_querysmith_db_py_engine"
+      "target": "src_querysmith_db_py_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2609,9 +2669,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_rationale_28",
-      "target": "src_querysmith_db_make_engine"
+      "target": "src_querysmith_db_make_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -2621,9 +2681,9 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_test_connection",
-      "target": "src_querysmith_db_py_engine"
+      "target": "src_querysmith_db_py_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2632,9 +2692,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_db_rationale_34",
-      "target": "src_querysmith_db_test_connection"
+      "target": "src_querysmith_db_test_connection",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2643,9 +2703,9 @@
       "source_location": "L110",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard",
-      "target": "src_querysmith_guard_normalize_sql"
+      "target": "src_querysmith_guard_normalize_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2654,9 +2714,9 @@
       "source_location": "L103",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard",
-      "target": "src_querysmith_guard_remove_optional_trailing_semicolon"
+      "target": "src_querysmith_guard_remove_optional_trailing_semicolon",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2665,9 +2725,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2676,9 +2736,9 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard",
-      "target": "src_querysmith_guard_validate_safe_select"
+      "target": "src_querysmith_guard_validate_safe_select",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2687,9 +2747,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_rationale_1",
-      "target": "src_querysmith_guard"
+      "target": "src_querysmith_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2699,9 +2759,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_guard"
+      "target": "src_querysmith_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2711,9 +2771,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline",
-      "target": "src_querysmith_guard"
+      "target": "src_querysmith_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2723,9 +2783,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "src_querysmith_guard"
+      "target": "src_querysmith_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2735,9 +2795,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "src_querysmith_guard"
+      "target": "src_querysmith_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2747,9 +2807,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "src_querysmith_guard"
+      "target": "src_querysmith_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2758,9 +2818,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_rationale_9",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -2769,9 +2829,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_unsafequeryerror",
-      "target": "valueerror"
+      "target": "valueerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2781,9 +2841,9 @@
       "source_location": "L66",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_validate_safe_select",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 1.0
     },
     {
       "relation": "indirect_call",
@@ -2900,9 +2960,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakechat",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -2911,9 +2971,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakechoice",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -2922,9 +2982,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakeclient",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -2933,9 +2993,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakecompletion",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -2944,9 +3004,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakecompletions",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -2955,9 +3015,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakemessage",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -2966,9 +3026,9 @@
       "source_location": "L9",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakeopenaichatclient",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "indirect_call",
@@ -3001,9 +3061,9 @@
       "source_location": "L7",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeclient",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3012,9 +3072,9 @@
       "source_location": "L7",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeconnection",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3023,9 +3083,9 @@
       "source_location": "L7",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeengine",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3034,9 +3094,9 @@
       "source_location": "L7",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeresult",
-      "target": "src_querysmith_guard_unsafequeryerror"
+      "target": "src_querysmith_guard_unsafequeryerror",
+      "confidence_score": 0.5
     },
     {
       "relation": "indirect_call",
@@ -3081,9 +3141,9 @@
       "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_rationale_58",
-      "target": "src_querysmith_guard_validate_safe_select"
+      "target": "src_querysmith_guard_validate_safe_select",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3093,9 +3153,9 @@
       "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_validate_safe_select",
-      "target": "src_querysmith_guard_normalize_sql"
+      "target": "src_querysmith_guard_normalize_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3105,9 +3165,9 @@
       "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_guard_validate_safe_select",
-      "target": "src_querysmith_guard_remove_optional_trailing_semicolon"
+      "target": "src_querysmith_guard_remove_optional_trailing_semicolon",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3294,12 +3354,24 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/querysmith/introspector.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_querysmith_introspector",
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/querysmith/introspector.py",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_introspector",
-      "target": "sqlalchemy"
+      "target": "sqlalchemy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3308,21 +3380,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_introspector",
-      "target": "src_querysmith_introspector_introspect_schema"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/querysmith/introspector.py",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_querysmith_introspector",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_introspector_introspect_schema",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3331,9 +3391,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_introspector_rationale_1",
-      "target": "src_querysmith_introspector"
+      "target": "src_querysmith_introspector",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3343,9 +3403,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline",
-      "target": "src_querysmith_introspector"
+      "target": "src_querysmith_introspector",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3355,9 +3415,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_introspector_introspect_schema",
-      "target": "src_querysmith_introspector_py_engine"
+      "target": "src_querysmith_introspector_py_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3391,9 +3451,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_introspector_introspect_schema",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3402,9 +3462,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_introspector_rationale_9",
-      "target": "src_querysmith_introspector_introspect_schema"
+      "target": "src_querysmith_introspector_introspect_schema",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3426,9 +3486,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "langchain_openai"
+      "target": "langchain_openai",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3438,9 +3498,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "openai"
+      "target": "openai",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3449,9 +3509,9 @@
       "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_llm_build_sql_prompt"
+      "target": "src_querysmith_llm_build_sql_prompt",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3460,9 +3520,9 @@
       "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_llm_clean_sql_response"
+      "target": "src_querysmith_llm_clean_sql_response",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3471,9 +3531,9 @@
       "source_location": "L161",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_llm_first_env_value"
+      "target": "src_querysmith_llm_first_env_value",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3482,9 +3542,9 @@
       "source_location": "L133",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_llm_generate_sql"
+      "target": "src_querysmith_llm_generate_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3493,9 +3553,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_llm_llmclient"
+      "target": "src_querysmith_llm_llmclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3504,9 +3564,9 @@
       "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3515,9 +3575,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_1",
-      "target": "src_querysmith_llm"
+      "target": "src_querysmith_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3527,9 +3587,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline",
-      "target": "src_querysmith_llm"
+      "target": "src_querysmith_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -3539,9 +3599,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "src_querysmith_llm"
+      "target": "src_querysmith_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3551,9 +3611,9 @@
       "source_location": "L133",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_generate_sql",
-      "target": "src_querysmith_llm_llmclient"
+      "target": "src_querysmith_llm_llmclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -3562,9 +3622,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_llmclient",
-      "target": "protocol"
+      "target": "protocol",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3573,9 +3633,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_llmclient",
-      "target": "src_querysmith_llm_llmclient_complete"
+      "target": "src_querysmith_llm_llmclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3584,9 +3644,9 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_25",
-      "target": "src_querysmith_llm_llmclient"
+      "target": "src_querysmith_llm_llmclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3596,9 +3656,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline_generate_query",
-      "target": "src_querysmith_llm_llmclient"
+      "target": "src_querysmith_llm_llmclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3607,9 +3667,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_28",
-      "target": "src_querysmith_llm_llmclient_complete"
+      "target": "src_querysmith_llm_llmclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3618,9 +3678,9 @@
       "source_location": "L62",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient",
-      "target": "src_querysmith_llm_openaicompatibleclient_complete"
+      "target": "src_querysmith_llm_openaicompatibleclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3629,9 +3689,9 @@
       "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient",
-      "target": "src_querysmith_llm_openaicompatibleclient_get_embeddings"
+      "target": "src_querysmith_llm_openaicompatibleclient_get_embeddings",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3640,9 +3700,9 @@
       "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient",
-      "target": "src_querysmith_llm_openaicompatibleclient_get_model"
+      "target": "src_querysmith_llm_openaicompatibleclient_get_model",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3651,9 +3711,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient",
-      "target": "src_querysmith_llm_openaicompatibleclient_init"
+      "target": "src_querysmith_llm_openaicompatibleclient_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3662,9 +3722,9 @@
       "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_32",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "uses",
@@ -3673,9 +3733,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakechat",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3684,9 +3744,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakechoice",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3695,9 +3755,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakeclient",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3706,9 +3766,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakecompletion",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3717,9 +3777,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakecompletions",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3728,9 +3788,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakemessage",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -3739,9 +3799,9 @@
       "source_location": "L10",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_llm_fakeopenaichatclient",
-      "target": "src_querysmith_llm_openaicompatibleclient"
+      "target": "src_querysmith_llm_openaicompatibleclient",
+      "confidence_score": 0.5
     },
     {
       "relation": "calls",
@@ -3835,9 +3895,9 @@
       "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient_init",
-      "target": "src_querysmith_llm_first_env_value"
+      "target": "src_querysmith_llm_first_env_value",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3847,9 +3907,9 @@
       "source_location": "L141",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_generate_sql",
-      "target": "src_querysmith_llm_openaicompatibleclient_complete"
+      "target": "src_querysmith_llm_openaicompatibleclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3858,9 +3918,9 @@
       "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_63",
-      "target": "src_querysmith_llm_openaicompatibleclient_complete"
+      "target": "src_querysmith_llm_openaicompatibleclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3870,9 +3930,9 @@
       "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient_get_model",
-      "target": "chatopenai"
+      "target": "chatopenai",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3881,9 +3941,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_80",
-      "target": "src_querysmith_llm_openaicompatibleclient_get_model"
+      "target": "src_querysmith_llm_openaicompatibleclient_get_model",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -3893,9 +3953,9 @@
       "source_location": "L89",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_openaicompatibleclient_get_embeddings",
-      "target": "openaiembeddings"
+      "target": "openaiembeddings",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3904,9 +3964,9 @@
       "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_90",
-      "target": "src_querysmith_llm_openaicompatibleclient_get_embeddings"
+      "target": "src_querysmith_llm_openaicompatibleclient_get_embeddings",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3916,9 +3976,9 @@
       "source_location": "L140",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_generate_sql",
-      "target": "src_querysmith_llm_build_sql_prompt"
+      "target": "src_querysmith_llm_build_sql_prompt",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3927,9 +3987,9 @@
       "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_100",
-      "target": "src_querysmith_llm_build_sql_prompt"
+      "target": "src_querysmith_llm_build_sql_prompt",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3987,9 +4047,9 @@
       "source_location": "L142",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_generate_sql",
-      "target": "src_querysmith_llm_clean_sql_response"
+      "target": "src_querysmith_llm_clean_sql_response",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3998,9 +4058,9 @@
       "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_138",
-      "target": "src_querysmith_llm_generate_sql"
+      "target": "src_querysmith_llm_generate_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4081,9 +4141,9 @@
       "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_llm_rationale_147",
-      "target": "src_querysmith_llm_clean_sql_response"
+      "target": "src_querysmith_llm_clean_sql_response",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4092,9 +4152,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4103,9 +4163,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models",
-      "target": "src_querysmith_models_foreignkey"
+      "target": "src_querysmith_models_foreignkey",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4114,9 +4174,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4125,9 +4185,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models_rationale_1",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4137,9 +4197,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4149,9 +4209,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_models",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4161,9 +4221,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4173,9 +4233,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_serializer",
-      "target": "src_querysmith_models"
+      "target": "src_querysmith_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4184,9 +4244,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models_rationale_8",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4196,9 +4256,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_column",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4219,9 +4279,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeclient",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -4230,9 +4290,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeconnection",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -4241,9 +4301,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeengine",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -4252,9 +4312,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeresult",
-      "target": "src_querysmith_models_column"
+      "target": "src_querysmith_models_column",
+      "confidence_score": 0.5
     },
     {
       "relation": "calls",
@@ -4311,9 +4371,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models_rationale_19",
-      "target": "src_querysmith_models_foreignkey"
+      "target": "src_querysmith_models_foreignkey",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4323,9 +4383,9 @@
       "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_qualified_referenced_table",
-      "target": "src_querysmith_models_foreignkey"
+      "target": "src_querysmith_models_foreignkey",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4335,9 +4395,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_column",
-      "target": "src_querysmith_models_foreignkey"
+      "target": "src_querysmith_models_foreignkey",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4370,9 +4430,9 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models_rationale_28",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -4381,9 +4441,9 @@
       "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models_table",
-      "target": "src_querysmith_models_table_full_name"
+      "target": "src_querysmith_models_table_full_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4393,9 +4453,9 @@
       "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_qualified_referenced_table",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4405,9 +4465,9 @@
       "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_qualified_table_name",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4417,9 +4477,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_column",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4429,9 +4489,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_schema",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4452,9 +4512,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeclient",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -4463,9 +4523,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeconnection",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -4474,9 +4534,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeengine",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -4485,9 +4545,9 @@
       "source_location": "L8",
       "weight": 0.8,
       "_origin": "ast",
-      "confidence_score": 0.5,
       "source": "tests_test_pipeline_fakeresult",
-      "target": "src_querysmith_models_table"
+      "target": "src_querysmith_models_table",
+      "confidence_score": 0.5
     },
     {
       "relation": "calls",
@@ -4544,43 +4604,9 @@
       "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_models_rationale_38",
-      "target": "src_querysmith_models_table_full_name"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/querysmith/pipeline.py",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_querysmith_pipeline",
-      "target": "sqlalchemy"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/querysmith/pipeline.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_querysmith_pipeline",
-      "target": "src_querysmith_pipeline_execute_select"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/querysmith/pipeline.py",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "src_querysmith_pipeline",
-      "target": "src_querysmith_pipeline_generate_query"
+      "target": "src_querysmith_models_table_full_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4590,9 +4616,43 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline",
-      "target": "src_querysmith_serializer"
+      "target": "src_querysmith_serializer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/querysmith/pipeline.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_querysmith_pipeline",
+      "target": "sqlalchemy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/querysmith/pipeline.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_querysmith_pipeline",
+      "target": "src_querysmith_pipeline_execute_select",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/querysmith/pipeline.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_querysmith_pipeline",
+      "target": "src_querysmith_pipeline_generate_query",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4601,9 +4661,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline_rationale_1",
-      "target": "src_querysmith_pipeline"
+      "target": "src_querysmith_pipeline",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4613,9 +4673,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "src_querysmith_pipeline"
+      "target": "src_querysmith_pipeline",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4625,9 +4685,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline_generate_query",
-      "target": "src_querysmith_pipeline_py_engine"
+      "target": "src_querysmith_pipeline_py_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4648,9 +4708,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline_rationale_17",
-      "target": "src_querysmith_pipeline_generate_query"
+      "target": "src_querysmith_pipeline_generate_query",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4708,9 +4768,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline_execute_select",
-      "target": "src_querysmith_pipeline_py_engine"
+      "target": "src_querysmith_pipeline_py_engine",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4719,9 +4779,9 @@
       "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_pipeline_rationale_29",
-      "target": "src_querysmith_pipeline_execute_select"
+      "target": "src_querysmith_pipeline_execute_select",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4778,9 +4838,9 @@
       "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer",
-      "target": "src_querysmith_serializer_qualified_referenced_table"
+      "target": "src_querysmith_serializer_qualified_referenced_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4789,9 +4849,9 @@
       "source_location": "L73",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer",
-      "target": "src_querysmith_serializer_qualified_table_name"
+      "target": "src_querysmith_serializer_qualified_table_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4800,9 +4860,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer",
-      "target": "src_querysmith_serializer_serialize_column"
+      "target": "src_querysmith_serializer_serialize_column",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4811,9 +4871,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer",
-      "target": "src_querysmith_serializer_serialize_schema"
+      "target": "src_querysmith_serializer_serialize_schema",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4822,9 +4882,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_rationale_1",
-      "target": "src_querysmith_serializer"
+      "target": "src_querysmith_serializer",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4834,9 +4894,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_serializer",
-      "target": "src_querysmith_serializer"
+      "target": "src_querysmith_serializer",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4845,9 +4905,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_rationale_7",
-      "target": "src_querysmith_serializer_serialize_schema"
+      "target": "src_querysmith_serializer_serialize_schema",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4857,9 +4917,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_schema",
-      "target": "src_querysmith_serializer_qualified_referenced_table"
+      "target": "src_querysmith_serializer_qualified_referenced_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4869,9 +4929,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_schema",
-      "target": "src_querysmith_serializer_qualified_table_name"
+      "target": "src_querysmith_serializer_qualified_table_name",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4881,9 +4941,9 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_schema",
-      "target": "src_querysmith_serializer_serialize_column"
+      "target": "src_querysmith_serializer_serialize_column",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4929,9 +4989,9 @@
       "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "src_querysmith_serializer_serialize_column",
-      "target": "src_querysmith_serializer_qualified_referenced_table"
+      "target": "src_querysmith_serializer_qualified_referenced_table",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -4941,9 +5001,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config",
-      "target": "pytest"
+      "target": "pytest",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4952,9 +5012,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config",
-      "target": "tests_test_config_test_config_parses_trusted_flag"
+      "target": "tests_test_config_test_config_parses_trusted_flag",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4963,9 +5023,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config",
-      "target": "tests_test_config_test_config_supports_env_example_names"
+      "target": "tests_test_config_test_config_supports_env_example_names",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4974,9 +5034,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config_rationale_1",
-      "target": "tests_test_config"
+      "target": "tests_test_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4985,9 +5045,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config_rationale_9",
-      "target": "tests_test_config_test_config_parses_trusted_flag"
+      "target": "tests_test_config_test_config_parses_trusted_flag",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -4997,9 +5057,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config_test_config_parses_trusted_flag",
-      "target": "tests_test_config_py_monkeypatch"
+      "target": "tests_test_config_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -5009,9 +5069,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config_test_config_supports_env_example_names",
-      "target": "tests_test_config_py_monkeypatch"
+      "target": "tests_test_config_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5020,9 +5080,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_config_rationale_23",
-      "target": "tests_test_config_test_config_supports_env_example_names"
+      "target": "tests_test_config_test_config_supports_env_example_names",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5031,9 +5091,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db",
-      "target": "tests_test_db_test_build_url_named_instance"
+      "target": "tests_test_db_test_build_url_named_instance",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5042,9 +5102,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db",
-      "target": "tests_test_db_test_build_url_sql_auth"
+      "target": "tests_test_db_test_build_url_sql_auth",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5053,9 +5113,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db",
-      "target": "tests_test_db_test_build_url_trusted"
+      "target": "tests_test_db_test_build_url_trusted",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5064,9 +5124,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db_rationale_1",
-      "target": "tests_test_db"
+      "target": "tests_test_db",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5075,9 +5135,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db_rationale_8",
-      "target": "tests_test_db_test_build_url_sql_auth"
+      "target": "tests_test_db_test_build_url_sql_auth",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5086,9 +5146,9 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db_rationale_25",
-      "target": "tests_test_db_test_build_url_trusted"
+      "target": "tests_test_db_test_build_url_trusted",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5097,9 +5157,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_db_rationale_43",
-      "target": "tests_test_db_test_build_url_named_instance"
+      "target": "tests_test_db_test_build_url_named_instance",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -5109,9 +5169,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "pytest"
+      "target": "pytest",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5120,9 +5180,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_accept_select_with_trailing_semicolon"
+      "target": "tests_test_guard_test_accept_select_with_trailing_semicolon",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5131,9 +5191,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_accept_simple_select"
+      "target": "tests_test_guard_test_accept_simple_select",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5142,9 +5202,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_accept_with_cte_select"
+      "target": "tests_test_guard_test_accept_with_cte_select",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5153,9 +5213,9 @@
       "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_block_comments"
+      "target": "tests_test_guard_test_reject_block_comments",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5164,9 +5224,9 @@
       "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_dangerous_write_keywords"
+      "target": "tests_test_guard_test_reject_dangerous_write_keywords",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5175,9 +5235,9 @@
       "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_empty_sql"
+      "target": "tests_test_guard_test_reject_empty_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5186,9 +5246,9 @@
       "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_exec"
+      "target": "tests_test_guard_test_reject_exec",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5197,9 +5257,9 @@
       "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_line_comments"
+      "target": "tests_test_guard_test_reject_line_comments",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5208,9 +5268,9 @@
       "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_multiple_statements"
+      "target": "tests_test_guard_test_reject_multiple_statements",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5219,9 +5279,9 @@
       "source_location": "L85",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_query_starting_with_non_select_or_with"
+      "target": "tests_test_guard_test_reject_query_starting_with_non_select_or_with",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5230,9 +5290,9 @@
       "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_select_into"
+      "target": "tests_test_guard_test_reject_select_into",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5241,9 +5301,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_reject_use_database"
+      "target": "tests_test_guard_test_reject_use_database",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5252,9 +5312,9 @@
       "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard",
-      "target": "tests_test_guard_test_returned_sql_is_stripped_and_trailing_semicolon_removed"
+      "target": "tests_test_guard_test_returned_sql_is_stripped_and_trailing_semicolon_removed",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5263,9 +5323,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_guard_rationale_1",
-      "target": "tests_test_guard"
+      "target": "tests_test_guard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -5275,9 +5335,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "pytest"
+      "target": "pytest",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5286,9 +5346,9 @@
       "source_location": "L235",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakechat"
+      "target": "tests_test_llm_fakechat",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5297,9 +5357,9 @@
       "source_location": "L207",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakechoice"
+      "target": "tests_test_llm_fakechoice",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5308,9 +5368,9 @@
       "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakeclient"
+      "target": "tests_test_llm_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5319,9 +5379,9 @@
       "source_location": "L212",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakecompletion"
+      "target": "tests_test_llm_fakecompletion",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5330,9 +5390,9 @@
       "source_location": "L216",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakecompletions"
+      "target": "tests_test_llm_fakecompletions",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5341,9 +5401,9 @@
       "source_location": "L202",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakemessage"
+      "target": "tests_test_llm_fakemessage",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5352,9 +5412,9 @@
       "source_location": "L240",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_fakeopenaichatclient"
+      "target": "tests_test_llm_fakeopenaichatclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5363,9 +5423,9 @@
       "source_location": "L45",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_build_sql_prompt_includes_schema_text"
+      "target": "tests_test_llm_test_build_sql_prompt_includes_schema_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5374,9 +5434,9 @@
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_build_sql_prompt_includes_user_question"
+      "target": "tests_test_llm_test_build_sql_prompt_includes_user_question",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5385,9 +5445,9 @@
       "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_build_sql_prompt_mentions_sql_server_or_tsql"
+      "target": "tests_test_llm_test_build_sql_prompt_mentions_sql_server_or_tsql",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5396,9 +5456,9 @@
       "source_location": "L57",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_build_sql_prompt_says_output_sql_only"
+      "target": "tests_test_llm_test_build_sql_prompt_says_output_sql_only",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5407,9 +5467,9 @@
       "source_location": "L85",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_generate_sql_raises_for_delete"
+      "target": "tests_test_llm_test_generate_sql_raises_for_delete",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5418,9 +5478,9 @@
       "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_generate_sql_raises_for_multiple_statements"
+      "target": "tests_test_llm_test_generate_sql_raises_for_multiple_statements",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5429,9 +5489,9 @@
       "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_generate_sql_removes_markdown_sql_fences"
+      "target": "tests_test_llm_test_generate_sql_removes_markdown_sql_fences",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5440,9 +5500,9 @@
       "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_generate_sql_returns_safe_select_from_fake_client"
+      "target": "tests_test_llm_test_generate_sql_returns_safe_select_from_fake_client",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5451,9 +5511,9 @@
       "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_generate_sql_sends_prompt_to_client"
+      "target": "tests_test_llm_test_generate_sql_sends_prompt_to_client",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5462,9 +5522,9 @@
       "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_accepts_explicit_config"
+      "target": "tests_test_llm_test_openai_compatible_client_accepts_explicit_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5473,9 +5533,9 @@
       "source_location": "L189",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response"
+      "target": "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5484,9 +5544,9 @@
       "source_location": "L175",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client"
+      "target": "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5495,9 +5555,9 @@
       "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_default_base_url"
+      "target": "tests_test_llm_test_openai_compatible_client_default_base_url",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5506,9 +5566,9 @@
       "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults"
+      "target": "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5517,9 +5577,9 @@
       "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars"
+      "target": "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5528,9 +5588,9 @@
       "source_location": "L164",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm",
-      "target": "tests_test_llm_test_openai_compatible_client_requires_api_key"
+      "target": "tests_test_llm_test_openai_compatible_client_requires_api_key",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5539,9 +5599,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_rationale_1",
-      "target": "tests_test_llm"
+      "target": "tests_test_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -5550,9 +5610,9 @@
       "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakeclient",
-      "target": "tests_test_llm_fakeclient_complete"
+      "target": "tests_test_llm_fakeclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -5561,9 +5621,9 @@
       "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakeclient",
-      "target": "tests_test_llm_fakeclient_init"
+      "target": "tests_test_llm_fakeclient_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5573,9 +5633,9 @@
       "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_generate_sql_raises_for_delete",
-      "target": "tests_test_llm_fakeclient"
+      "target": "tests_test_llm_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5585,9 +5645,9 @@
       "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_generate_sql_raises_for_multiple_statements",
-      "target": "tests_test_llm_fakeclient"
+      "target": "tests_test_llm_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5597,9 +5657,9 @@
       "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_generate_sql_removes_markdown_sql_fences",
-      "target": "tests_test_llm_fakeclient"
+      "target": "tests_test_llm_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5609,9 +5669,9 @@
       "source_location": "L64",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_generate_sql_returns_safe_select_from_fake_client",
-      "target": "tests_test_llm_fakeclient"
+      "target": "tests_test_llm_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5621,9 +5681,9 @@
       "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_generate_sql_sends_prompt_to_client",
-      "target": "tests_test_llm_fakeclient"
+      "target": "tests_test_llm_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5633,9 +5693,9 @@
       "source_location": "L198",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response",
-      "target": "tests_test_llm_fakeclient_complete"
+      "target": "tests_test_llm_fakeclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5645,9 +5705,9 @@
       "source_location": "L184",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client",
-      "target": "tests_test_llm_fakeclient_complete"
+      "target": "tests_test_llm_fakeclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -5657,9 +5717,9 @@
       "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_default_base_url",
-      "target": "tests_test_llm_py_monkeypatch"
+      "target": "tests_test_llm_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -5669,9 +5729,9 @@
       "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_env_vars_override_defaults",
-      "target": "tests_test_llm_py_monkeypatch"
+      "target": "tests_test_llm_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -5681,9 +5741,9 @@
       "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_explicit_args_override_env_vars",
-      "target": "tests_test_llm_py_monkeypatch"
+      "target": "tests_test_llm_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -5693,9 +5753,9 @@
       "source_location": "L164",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_requires_api_key",
-      "target": "tests_test_llm_py_monkeypatch"
+      "target": "tests_test_llm_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5705,9 +5765,9 @@
       "source_location": "L181",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_complete_uses_internal_client",
-      "target": "tests_test_llm_fakeopenaichatclient"
+      "target": "tests_test_llm_fakeopenaichatclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5717,9 +5777,9 @@
       "source_location": "L195",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_test_openai_compatible_client_complete_rejects_empty_response",
-      "target": "tests_test_llm_fakeopenaichatclient"
+      "target": "tests_test_llm_fakeopenaichatclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5729,9 +5789,9 @@
       "source_location": "L232",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakecompletions_create",
-      "target": "tests_test_llm_fakemessage"
+      "target": "tests_test_llm_fakemessage",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5741,9 +5801,9 @@
       "source_location": "L232",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakecompletions_create",
-      "target": "tests_test_llm_fakechoice"
+      "target": "tests_test_llm_fakechoice",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -5753,9 +5813,9 @@
       "source_location": "L222",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakecompletions_create",
-      "target": "tests_test_llm_fakecompletion"
+      "target": "tests_test_llm_fakecompletion",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5765,9 +5825,9 @@
       "source_location": "L237",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakechat_init",
-      "target": "tests_test_llm_fakecompletions"
+      "target": "tests_test_llm_fakecompletions",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -5776,9 +5836,9 @@
       "source_location": "L222",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakecompletions",
-      "target": "tests_test_llm_fakecompletions_create"
+      "target": "tests_test_llm_fakecompletions_create",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -5787,9 +5847,9 @@
       "source_location": "L217",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakecompletions",
-      "target": "tests_test_llm_fakecompletions_init"
+      "target": "tests_test_llm_fakecompletions_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -5798,9 +5858,9 @@
       "source_location": "L236",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakechat",
-      "target": "tests_test_llm_fakechat_init"
+      "target": "tests_test_llm_fakechat_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5810,9 +5870,9 @@
       "source_location": "L242",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakeopenaichatclient_init",
-      "target": "tests_test_llm_fakechat"
+      "target": "tests_test_llm_fakechat",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -5821,9 +5881,9 @@
       "source_location": "L241",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_llm_fakeopenaichatclient",
-      "target": "tests_test_llm_fakeopenaichatclient_init"
+      "target": "tests_test_llm_fakeopenaichatclient_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5832,9 +5892,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_models",
-      "target": "tests_test_models_test_table_full_name_and_schema_fields"
+      "target": "tests_test_models_test_table_full_name_and_schema_fields",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5843,9 +5903,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_models_rationale_1",
-      "target": "tests_test_models"
+      "target": "tests_test_models",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -5854,9 +5914,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_models_rationale_7",
-      "target": "tests_test_models_test_table_full_name_and_schema_fields"
+      "target": "tests_test_models_test_table_full_name_and_schema_fields",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -5866,9 +5926,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "pytest"
+      "target": "pytest",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5877,9 +5937,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_fakeclient"
+      "target": "tests_test_pipeline_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5888,9 +5948,9 @@
       "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_fakeconnection"
+      "target": "tests_test_pipeline_fakeconnection",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5899,9 +5959,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5910,9 +5970,9 @@
       "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_fakeresult"
+      "target": "tests_test_pipeline_fakeresult",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5921,9 +5981,9 @@
       "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_execute_select_rejects_invalid_max_rows"
+      "target": "tests_test_pipeline_test_execute_select_rejects_invalid_max_rows",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5932,9 +5992,9 @@
       "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_execute_select_rejects_unsafe_sql"
+      "target": "tests_test_pipeline_test_execute_select_rejects_unsafe_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5943,9 +6003,9 @@
       "source_location": "L135",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_execute_select_validates_sql_before_execution"
+      "target": "tests_test_pipeline_test_execute_select_validates_sql_before_execution",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5954,9 +6014,9 @@
       "source_location": "L144",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_execute_select_wraps_safe_sql_and_returns_rows"
+      "target": "tests_test_pipeline_test_execute_select_wraps_safe_sql_and_returns_rows",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5965,9 +6025,9 @@
       "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_generate_query_does_not_execute_sql"
+      "target": "tests_test_pipeline_test_generate_query_does_not_execute_sql",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5976,9 +6036,9 @@
       "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client"
+      "target": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5987,9 +6047,9 @@
       "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm"
+      "target": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5998,9 +6058,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline",
-      "target": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm"
+      "target": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -6009,9 +6069,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_rationale_1",
-      "target": "tests_test_pipeline"
+      "target": "tests_test_pipeline",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6020,9 +6080,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeclient",
-      "target": "tests_test_pipeline_fakeclient_complete"
+      "target": "tests_test_pipeline_fakeclient_complete",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6031,9 +6091,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeclient",
-      "target": "tests_test_pipeline_fakeclient_init"
+      "target": "tests_test_pipeline_fakeclient_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6043,9 +6103,9 @@
       "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_does_not_execute_sql",
-      "target": "tests_test_pipeline_fakeclient"
+      "target": "tests_test_pipeline_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6055,9 +6115,9 @@
       "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client",
-      "target": "tests_test_pipeline_fakeclient"
+      "target": "tests_test_pipeline_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6067,9 +6127,9 @@
       "source_location": "L85",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm",
-      "target": "tests_test_pipeline_fakeclient"
+      "target": "tests_test_pipeline_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6079,9 +6139,9 @@
       "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm",
-      "target": "tests_test_pipeline_fakeclient"
+      "target": "tests_test_pipeline_fakeclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6091,9 +6151,9 @@
       "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeconnection_init",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6102,9 +6162,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeengine",
-      "target": "tests_test_pipeline_fakeengine_connect"
+      "target": "tests_test_pipeline_fakeengine_connect",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6113,9 +6173,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeengine",
-      "target": "tests_test_pipeline_fakeengine_init"
+      "target": "tests_test_pipeline_fakeengine_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6125,9 +6185,9 @@
       "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_execute_select_rejects_invalid_max_rows",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6137,9 +6197,9 @@
       "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_execute_select_rejects_unsafe_sql",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6149,9 +6209,9 @@
       "source_location": "L136",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_execute_select_validates_sql_before_execution",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6161,9 +6221,9 @@
       "source_location": "L145",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_execute_select_wraps_safe_sql_and_returns_rows",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6173,9 +6233,9 @@
       "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_does_not_execute_sql",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6185,9 +6245,9 @@
       "source_location": "L117",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6197,9 +6257,9 @@
       "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -6209,9 +6269,9 @@
       "source_location": "L67",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm",
-      "target": "tests_test_pipeline_fakeengine"
+      "target": "tests_test_pipeline_fakeengine",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6221,42 +6281,9 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeengine_connect",
-      "target": "tests_test_pipeline_fakeconnection"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test_pipeline.py",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tests_test_pipeline_fakeconnection",
-      "target": "tests_test_pipeline_fakeconnection_execute"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test_pipeline.py",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tests_test_pipeline_fakeconnection",
-      "target": "tests_test_pipeline_fakeconnection_exit"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test_pipeline.py",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "tests_test_pipeline_fakeconnection",
-      "target": "tests_test_pipeline_fakeconnection_init"
+      "target": "tests_test_pipeline_fakeconnection",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6266,9 +6293,42 @@
       "weight": 1.0,
       "_origin": "ast",
       "context": "return_type",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeconnection_enter",
-      "target": "tests_test_pipeline_fakeconnection"
+      "target": "tests_test_pipeline_fakeconnection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_fakeconnection",
+      "target": "tests_test_pipeline_fakeconnection_execute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_fakeconnection",
+      "target": "tests_test_pipeline_fakeconnection_exit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_pipeline_fakeconnection",
+      "target": "tests_test_pipeline_fakeconnection_init",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6278,9 +6338,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeconnection_execute",
-      "target": "tests_test_pipeline_fakeresult"
+      "target": "tests_test_pipeline_fakeresult",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -6289,9 +6349,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_fakeresult",
-      "target": "tests_test_pipeline_fakeresult_mappings"
+      "target": "tests_test_pipeline_fakeresult_mappings",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6301,9 +6361,9 @@
       "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_returns_sql_from_fake_llm",
-      "target": "tests_test_pipeline_py_monkeypatch"
+      "target": "tests_test_pipeline_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6313,9 +6373,9 @@
       "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_does_not_execute_sql",
-      "target": "tests_test_pipeline_py_monkeypatch"
+      "target": "tests_test_pipeline_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6325,9 +6385,9 @@
       "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_does_not_instantiate_openai_client",
-      "target": "tests_test_pipeline_py_monkeypatch"
+      "target": "tests_test_pipeline_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6337,9 +6397,9 @@
       "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_pipeline_test_generate_query_passes_serialized_schema_to_llm",
-      "target": "tests_test_pipeline_py_monkeypatch"
+      "target": "tests_test_pipeline_py_monkeypatch",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6348,9 +6408,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_serializer",
-      "target": "tests_test_serializer_test_serialize_schema_is_compact_and_deterministic"
+      "target": "tests_test_serializer_test_serialize_schema_is_compact_and_deterministic",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6359,9 +6419,9 @@
       "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_serializer",
-      "target": "tests_test_serializer_test_serialize_schema_marks_no_relationships"
+      "target": "tests_test_serializer_test_serialize_schema_marks_no_relationships",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6370,9 +6430,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_serializer",
-      "target": "tests_test_serializer_test_serialize_schema_returns_empty_marker_for_no_tables"
+      "target": "tests_test_serializer_test_serialize_schema_returns_empty_marker_for_no_tables",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -6381,9 +6441,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "tests_test_serializer_rationale_1",
-      "target": "tests_test_serializer"
+      "target": "tests_test_serializer",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6447,5 +6507,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fde37039de9d145cbfc33df5de378c9d3a79926b"
+  "built_at_commit": "79fb9628288208a68ed243ad60bdb4c27b50bb0d"
 }

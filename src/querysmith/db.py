@@ -1,6 +1,6 @@
 """Database connection helpers for QuerySmith."""
 
-from sqlalchemy import Engine, URL, create_engine, text
+from sqlalchemy import URL, Engine, create_engine, text
 
 from querysmith.config import DBConfig
 

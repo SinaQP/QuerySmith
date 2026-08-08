@@ -4,7 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "querysmith"
-version = "0.1.0"
+version = "0.2.0"
+
 description = "Convert Persian and English natural-language questions into safe T-SQL SELECT queries."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -42,17 +43,22 @@ dependencies = [
     "sqlalchemy>=2.0",
     "pyodbc",
     "python-dotenv",
+    "sqlglot>=25.0",
     "openai",
     "langchain-openai",
 ]
 
 [project.optional-dependencies]
+django = [
+    "Django>=4.2",
+]
 dev = [
     "pytest",
     "build",
     "twine",
     "ruff",
     "mypy",
+    "Django>=4.2",
 ]
 
 [project.urls]
@@ -65,3 +71,7 @@ packages = ["src/querysmith"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+markers = [
+    "integration: tests that require external integration services",
+    "sqlserver: tests that require a live Microsoft SQL Server",
+]

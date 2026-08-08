@@ -40,7 +40,9 @@ def load_config() -> DBConfig:
         "DB_PASSWORD": os.getenv("DB_PASSWORD"),
     }
     missing_variables = [
-        name for name, value in required_variables.items() if value is None or value == ""
+        name
+        for name, value in required_variables.items()
+        if value is None or value == ""
     ]
 
     if missing_variables:

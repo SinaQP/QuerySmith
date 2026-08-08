@@ -5,6 +5,8 @@ __pycache__/
 
 # Virtual environments
 .venv/
+.release-test/
+.pypi-release-test/
 venv/
 env/
 ENV/
@@ -23,6 +25,7 @@ htmlcov/
 .env
 .env.*
 !.env.example
+!.env.integration.example
 
 # Tool caches
 .mypy_cache/
@@ -30,6 +33,7 @@ htmlcov/
 .tox/
 
 # Graphify machine-local metadata (the graph itself is shared in Git)
+graphify-out/.graphify_python
 graphify-out/manifest.json
 graphify-out/cost.json
 graphify-out/cache/

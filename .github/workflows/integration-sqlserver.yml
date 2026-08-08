@@ -1,0 +1,60 @@
+name: Integration Tests (SQL Server)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  integration-test:
+    name: SQL Server 2022 Integration Tests
+    runs-on: ubuntu-latest
+
+    services:
+      mssql:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        ports:
+          - 14333:1433
+        env:
+          ACCEPT_EULA: "Y"
+          MSSQL_SA_PASSWORD: "Password123!"
+          MSSQL_PID: "Developer"
+        options: >-
+          --health-cmd="/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'Password123!' -Q 'SELECT 1' -C"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install System Dependencies for ODBC
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unixodbc-dev
+          curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+          curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+          sudo apt-get update
+          sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Run SQL Server Integration Tests
+        env:
+          MSSQL_HOST: localhost
+          MSSQL_PORT: 14333
+          MSSQL_USER: sa
+          MSSQL_SA_PASSWORD: "Password123!"
+          MSSQL_DATABASE: QuerySmithTestDB
+          MSSQL_DRIVER: "ODBC Driver 18 for SQL Server"
+        run: |
+          pytest -v -m "integration"

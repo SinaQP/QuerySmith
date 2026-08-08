@@ -12,6 +12,10 @@ QuerySmith is a Python 3.11+ package that turns Persian and English natural-lang
 - Environment-based AvalAI and OpenAI-compatible configuration.
 - A conservative guard that allows one `SELECT` or `WITH ... SELECT` query and rejects comments, multiple statements, DDL/DML, procedure access, `SELECT INTO`, external data access, and linked-server-style object names.
 - Python helpers for configuration, connection creation, query generation, validation, and guarded execution.
+- Programmer-defined `QuerySpace` scopes spanning selected tables from multiple schemas.
+- **Access Profiles (Phase 5)**: Declarative profile-aware permissions (`AccessProfile`, `TableAccess`, `ColumnAccess`, `ResultAccess`, `MaskingPolicy`) for host application role-based and multi-tenant access control.
+- **Result Policy & Execution Safety (Phase 6)**: AST result sanitization (`ResultSanitizer`, `SanitizedResult`), column-level masking (FULL, PARTIAL, CONSTANT), hidden column stripping, statement timeout enforcement, and shape constraints (`max_joins`, `allow_subqueries`, `allow_ctes`, `allow_cross_join`).
+
 
 ## Installation
 
@@ -148,13 +152,440 @@ print(sql)
 
 The same flow accepts Persian questions, for example: `ده مشتری با بیشترین مبلغ سفارش را نمایش بده.`
 
-To execute a generated query, pass it to `querysmith.pipeline.execute_select(engine, sql)`. That function validates the SQL again and returns at most 100 rows by default (up to 1,000 when requested).
+For generation and execution in one authorized flow, use `ask(..., execute=True)`
+with an active schema or `QuerySpace`. The lower-level `execute_select()` API
+requires a `ResolvedQuerySpace` or `ProfiledQuerySpace`; raw SQL without an active
+scope is rejected. Execution returns at most 100 rows by default (up to 1,000 when
+requested and permitted by the active execution policy).
+
+## Selective QuerySpace
+
+QuerySmith separates programmer intent from trusted physical metadata:
+
+1. A developer creates an immutable, possibly partial `QuerySpace`.
+2. `SQLServerIntrospector.inspect_tables()` reads only its fully-qualified tables.
+3. `CatalogResolver` merges catalog metadata and produces a `ResolvedQuerySpace`.
+4. Only the resolved space reaches serialization, the LLM, the column-aware guard,
+   or execution.
+
+The schema-based facade remains available. It uses an explicit `allow` policy to
+preserve the original all-column behavior and generates SQL without executing it:
+
+```python
+import querysmith
+
+sql = querysmith.ask(
+    question="List active customers",
+    schema="Sales",
+)
+```
+
+For tighter control, construct a selective scope from fully-qualified tables
+across schemas. `data_type` and `nullable` are optional because resolution fills
+them from SQL Server. The default column policy is `deny`, so undeclared catalog
+columns are not exposed:
+
+```python
+from querysmith import (
+    ColumnSpec,
+    DefaultColumnPolicy,
+    ExecutionPolicy,
+    QuerySpace,
+    RelationshipSpec,
+    TableRef,
+    TableSpec,
+    ask,
+    load_config,
+    make_engine,
+)
+
+engine = make_engine(load_config())
+
+person = TableSpec(
+    ref=TableRef("Person", "Person"),
+    alias="people",
+    columns=[
+        ColumnSpec("BusinessEntityID"),
+        ColumnSpec("FirstName", alias="given_name"),
+        ColumnSpec("PasswordHash", allowed=False),
+    ],
+)
+employee = TableSpec(
+    ref=TableRef("HumanResources", "Employee"),
+    columns=[ColumnSpec("BusinessEntityID", data_type="int")],
+)
+employee_to_person = RelationshipSpec(
+    source_table=employee.ref,
+    source_column="BusinessEntityID",
+    target_table=person.ref,
+    target_column="BusinessEntityID",
+)
+
+query_space = QuerySpace(
+    tables=[person, employee],
+    relationships=[employee_to_person],
+    execution_policy=ExecutionPolicy(max_rows=100),
+    default_column_policy=DefaultColumnPolicy.DENY,
+)
+
+sql = ask(
+    question="Show employees and their person records",
+    query_space=query_space,
+    engine=engine,
+)
+```
+
+Use `DefaultColumnPolicy.ALLOW` to include every catalog column except declarations
+with `allowed=False`. Aliases and descriptions are semantic prompt context only;
+generated SQL must still use physical schema, table, and column identifiers.
+Alias validation is case-insensitive and rejects duplicates or collisions with
+physical names.
+
+The typed introspection API can also be used directly:
+
+```python
+from querysmith import TableRef, inspect_tables
+
+snapshot = inspect_tables(
+    engine,
+    [TableRef("Person", "Person"), TableRef("Sales", "Customer")],
+)
+```
+
+This path uses three parameterized catalog queries for the exact table set rather
+than reading every table in each schema. A single request is limited to 500 tables
+to remain below SQL Server's parameter limit. `QuerySpace.from_schema()` remains
+the full-schema compatibility adapter, while `QuerySpace.from_table_refs()` returns
+an already resolved selective space.
+
+Resolution fails before any LLM call or execution when a table or column is
+missing, declared metadata is incompatible, an alias conflicts, a denied column
+is used by a relationship, or a manual relationship is invalid. Catalog foreign
+keys are added only when both endpoints and both allowed columns are in the
+resolved space; valid manual relationships do not require a catalog foreign key.
+
+The scoped guard validates columns used by projections, joins, filters, ordering,
+grouping, and aggregates, including CTE and subquery lineage. Wildcards such as
+`SELECT *`, `table.*`, and `COUNT(table.*)` are rejected for every resolved
+QuerySpace; unqualified `COUNT(*)` remains available.
+
+## Semantic QuerySpace
+
+`QuerySpace` can describe business meaning without replacing trusted SQL Server
+metadata. Physical names and types come from `CatalogSnapshot`; descriptions,
+Persian or English synonyms, examples, units, semantic types, warnings, business
+rules, sensitivity, and operation capabilities come from developer declarations.
+`CatalogResolver` composes both into immutable `ResolvedTable` and
+`ResolvedColumn` objects. It never mutates the developer input.
+
+```python
+from querysmith import (
+    BusinessRule,
+    ColumnCapabilities,
+    ColumnSpec,
+    DataSensitivity,
+    QuerySpace,
+    SemanticType,
+    TableRef,
+    TableSpec,
+)
+
+orders_ref = TableRef("Sales", "Orders")
+orders = TableSpec(
+    ref=orders_ref,
+    alias="orders",
+    description="Customer purchase orders",
+    synonyms=("سفارش‌ها", "purchases"),
+    columns=[
+        ColumnSpec("OrderId", semantic_type=SemanticType.IDENTIFIER),
+        ColumnSpec(
+            "TotalDue",
+            alias="order_value",
+            synonyms=("مبلغ سفارش", "order total"),
+            description="Final amount payable by the customer",
+            semantic_type=SemanticType.CURRENCY,
+            unit="IRR",
+            example_values=("125000",),
+            capabilities=ColumnCapabilities(joinable=False),
+            sensitivity=DataSensitivity.INTERNAL,
+            interpretation_warnings=("Includes tax",),
+        ),
+        ColumnSpec("InternalNote", allowed=False),
+    ],
+    business_rules=(
+        BusinessRule(
+            "Exclude cancelled orders unless the question asks for them",
+            applies_to=orders_ref,
+            applies_to_columns=("TotalDue",),
+        ),
+    ),
+)
+
+query_space = QuerySpace([orders])
+```
+
+The default for a custom `QuerySpace` remains deny-by-default: catalog columns
+that are not declared are omitted. `allowed=False` denies every operation and
+cannot be combined with enabled capabilities. `DataSensitivity.RESTRICTED` also
+defaults to no capabilities, and sensitive or restricted columns cannot publish
+example values.
+
+Capabilities are enforced after generation as well as described to the model:
+
+- `selectable` controls projections and non-aggregate expressions.
+- `filterable` controls `WHERE` and `HAVING` references.
+- `sortable` controls `ORDER BY`, including output aliases.
+- `groupable` controls `GROUP BY`.
+- `aggregatable` controls aggregate-function arguments.
+- `joinable` controls join conditions and resolved relationships.
+
+CTEs, subqueries, table aliases, and output aliases retain physical-column
+lineage, so they cannot bypass a denied operation. Business rules are currently
+advisory semantic guidance; QuerySmith validates their table and column
+references but does not implement a rule DSL.
+
+`ContextBuilder` creates the deterministic context sent to the LLM and clearly
+labels physical identifiers separately from semantic hints. Existing
+`serialize_query_space()` calls remain supported as a compatibility wrapper:
+
+```python
+from querysmith import ContextBuilder, ContextBuilderOptions
+
+context = ContextBuilder(
+    ContextBuilderOptions(include_examples=False)
+).build(resolved_query_space)
+```
+
+## Row-Level Access Policy
+
+QuerySmith enforces mandatory row-level security policies directly in the AST, completely independent of the LLM:
+
+- **Application-Defined Policies**: Policies are declared in host application code via `RequiredFilter` on a `TableSpec` or `MandatoryFilterPolicy` on an `ExecutionPolicy`. The LLM cannot override, bypass, or remove these policies.
+- **Trusted Runtime Context**: `runtime_context` is supplied strictly by host application code (e.g., authenticated session data like `tenant_id` or `user_id`). It is never parsed from prompt text or user questions, and prompt injection attempts cannot modify it.
+- **Strict Parameterization**: All runtime values are injected using parameterized AST placeholders (e.g. `WHERE o.TenantID = :qs_policy_0_0` or `WHERE o.TenantID IN (:qs_policy_0_0_p0, :qs_policy_0_0_p1)`). Values are never formatted via string interpolation, eliminating SQL injection risks.
+- **Policy-Only Columns**: Columns marked with `access=ColumnAccess.POLICY_ONLY` are excluded from the LLM prompt context and rejected if directly queried by the user/LLM. However, the policy injector can inject them as trusted physical predicates without exposing them in the final output projection.
+- **CTE, Subquery & Outer Join Handling**:
+  - **CTEs & Subqueries**: Policies are recursively injected into every physical table reference inside CTE definitions, subqueries, and set operation (`UNION`/`UNION ALL`) branches.
+  - **Outer Joins**: Policies on the right (nullable) side of a `LEFT JOIN` are placed in the `ON` clause to preserve join semantics. For `RIGHT JOIN` and `FULL JOIN` where predicate placement cannot be safely proved, QuerySmith fails closed with `OuterJoinRewriteError`.
+- **Injection vs Prompt Instructions**: Unlike prompt instructions which can be ignored or bypassed by LLMs, AST policy injection operates post-LLM on the parsed AST using fail-closed security guarantees.
+
+### Usage Example
+
+```python
+from querysmith import (
+    ColumnAccess,
+    ColumnSpec,
+    ExecutionPolicy,
+    FilterOperator,
+    QuerySpace,
+    RequiredFilter,
+    TableRef,
+    TableSpec,
+    ask,
+    load_config,
+    make_engine,
+)
+
+engine = make_engine(load_config())
+
+sales_space = QuerySpace(
+    tables=[
+        TableSpec(
+            ref=TableRef("Sales", "Orders"),
+            columns=[
+                ColumnSpec("OrderID"),
+                ColumnSpec("TotalDue"),
+                ColumnSpec("TenantID", access=ColumnAccess.POLICY_ONLY),
+            ],
+            required_filters=[
+                RequiredFilter(
+                    column="TenantID",
+                    operator=FilterOperator.EQ,
+                    value_from_context="tenant_id",
+                ),
+            ],
+        ),
+    ],
+    execution_policy=ExecutionPolicy(max_rows=100),
+)
+
+# Mandatory tenant policy is automatically resolved from trusted runtime_context
+sql = ask(
+    question="Show my recent order totals",
+    query_space=sales_space,
+    runtime_context={"tenant_id": 42},
+    engine=engine,
+)
+```
+
+## SQL Authorization
+
+QuerySmith treats generated SQL as untrusted input. It parses one T-SQL statement
+with `sqlglot`, builds lexical scopes for aliases, CTEs, derived tables,
+subqueries, correlations, and set operations, and authorizes physical identifiers
+against the immutable `ResolvedQuerySpace`. Security decisions about tables,
+columns, joins, functions, and query shape are made from AST nodes rather than
+regular expressions.
+
+Each physical column is checked independently for its operation. `selectable`,
+`filterable`, `sortable`, `groupable`, `aggregatable`, and `joinable` therefore do
+not imply one another. Unqualified ambiguous columns fail closed. Physical tables
+must be schema-qualified unless `allow_unqualified_tables=True` explicitly permits
+an unambiguous match; database- and server-qualified sources are rejected.
+
+Projection wildcards are denied by default. `COUNT(*)` is safe because it does not
+expose column values, while `SELECT *`, `table.*`, and `COUNT(table.*)` are rejected.
+`allow_select_star=True` works only when every physical source column is
+user-selectable and the resolved table has no denied columns.
+
+`RelationshipSpec(strict=True)` is enforceable authorization metadata. Equality
+joins must match a declared strict relationship in either direction, and all join
+columns require `joinable=True`. Unlisted joins, complex cross-source predicates,
+implicit comma joins, and disabled join types fail closed. A non-strict
+relationship is semantic context only; it becomes usable only when the execution
+policy explicitly sets `allow_unlisted_joins=True`.
+
+Mandatory row predicates are typed `MandatoryFilterPolicy` values. A
+`POLICY_ONLY` column is retained in trusted resolved metadata but omitted from LLM
+context and rejected when generated SQL references it. The policy injector copies
+the original AST, injects a parameterized predicate for every physical table
+occurrence, places predicates for the nullable side of a `LEFT JOIN` in `ON`, and
+adds or reduces the outer T-SQL `TOP` limit. Injection is deterministic and
+idempotent. The rewritten SQL is parsed and fully authorized again before an
+immutable `AuthorizedQuery` can cross the execution boundary.
+
+```python
+from querysmith import (
+    CatalogResolver,
+    ColumnAccess,
+    ColumnSpec,
+    ExecutionPolicy,
+    MandatoryFilterPolicy,
+    QuerySpace,
+    SQLServerIntrospector,
+    TableRef,
+    TableSpec,
+    authorize_query_in_space,
+    execute_authorized_query,
+    load_config,
+    make_engine,
+)
+from querysmith.llm import OpenAICompatibleClient
+
+engine = make_engine(load_config())
+customer_ref = TableRef("Sales", "Customer")
+developer_space = QuerySpace(
+    tables=[
+        TableSpec(
+            customer_ref,
+            columns=[
+                ColumnSpec("CustomerId"),
+                ColumnSpec("DisplayName"),
+                ColumnSpec("IsDeleted", access=ColumnAccess.POLICY_ONLY),
+                ColumnSpec("SecretToken", allowed=False),
+            ],
+        )
+    ],
+    execution_policy=ExecutionPolicy(
+        max_rows=100,
+        mandatory_filters=(
+            MandatoryFilterPolicy(customer_ref, "IsDeleted", "=", False),
+        ),
+    ),
+)
+resolved_space = CatalogResolver(SQLServerIntrospector(engine)).resolve(
+    developer_space
+)
+authorized = authorize_query_in_space(
+    "List customers",
+    resolved_space,
+    OpenAICompatibleClient(),
+)
+rows = execute_authorized_query(engine, authorized, resolved_space)
+```
+
+Semantic `BusinessRule` text remains advisory prompt guidance. It is not an
+enforceable policy unless represented by a typed execution policy such as
+`MandatoryFilterPolicy`.
+
+## Security Error Codes & Authorization Report
+
+QuerySmith provides deterministic, machine-readable `AuthorizationReport` dataclasses and structured `AuthorizationErrorCode` enums for every authorization decision.
+
+### Authorization Error Codes
+
+| Error Code | Meaning |
+| --- | --- |
+| `TABLE_NOT_ALLOWED` | Physical table is not present in QuerySpace or disabled by access profile. |
+| `COLUMN_SELECT_NOT_ALLOWED` | Column cannot be projected in `SELECT` clause. |
+| `COLUMN_FILTER_NOT_ALLOWED` | Column cannot be used in `WHERE` / `HAVING` predicate filter. |
+| `COLUMN_JOIN_NOT_ALLOWED` | Column cannot be used in `JOIN` condition. |
+| `SELECT_STAR_NOT_ALLOWED` | `SELECT *` wildcard projection is forbidden by execution policy. |
+| `AMBIGUOUS_COLUMN` | Column name cannot be resolved unambiguously to a single source table. |
+| `RELATIONSHIP_NOT_ALLOWED` | Join condition does not match an explicit `RelationshipSpec`. |
+| `ACCESS_PROFILE_NOT_ALLOWED` | Requested access profile is unknown or disabled. |
+| `MANDATORY_FILTER_MISSING` | Required runtime context parameter is missing. |
+| `MANDATORY_FILTER_CONFLICT` | User SQL predicate contradicts mandatory row-level policy. |
+| `HIDDEN_COLUMN_EXPOSURE` | Output result exposes a hidden/denied column. |
+| `MASKING_BYPASS_ATTEMPT` | Query attempts to bypass or transform a masked column. |
+
+### Authorization Report Serialization
+
+Every `AuthorizationReport` can be serialized cleanly:
+
+```python
+report = authorized.authorization
+report_dict = report.to_dict()
+report_json = report.model_dump_json(indent=2)
+```
+
+## Structured Audit Logging
+
+QuerySmith provides zero-dependency structured audit logging for query lifecycle tracking, profile resolution, SQL generation, authorization checks, and execution results. Sensitive literal values and credentials are automatically redacted.
+
+```python
+from querysmith import PythonLoggingAuditLogger, AuditLoggingPolicy, ask
+
+logger = PythonLoggingAuditLogger()
+
+authorized = ask(
+    "Show active orders",
+    query_space=space,
+    access_profile="analyst",
+    runtime_context={"tenant_id": 10},
+    audit_logger=logger,
+)
+```
+
+### Audit Event Types
+
+- `query_received`: Logged upon receiving a natural language question.
+- `profile_resolved`: Logged when effective profile permissions are evaluated.
+- `sql_generated`: Logged when LLM generates candidate SQL (literals redacted).
+- `authorization_allowed` / `authorization_denied`: Logged upon AST authorization result.
+- `execution_started` / `execution_succeeded` / `execution_failed`: Logged during database execution boundary.
+
+## SQL Server Integration Testing
+
+Run live integration tests against a Microsoft SQL Server container:
+
+```bash
+# Start SQL Server 2022 service container
+docker-compose -f docker-compose.integration.yml up -d
+
+# Execute integration tests
+python -m pytest -v -m "integration"
+```
 
 ## Security model
 
-QuerySmith treats generated SQL as untrusted input. Before generation, it supplies the LLM with the introspected schema. Before execution, its application-level guard permits only a single conservative `SELECT` or `WITH ... SELECT` query and rejects comments, multiple statements, DDL/DML keywords, procedure access, `SELECT INTO`, `OUTPUT INTO`, risky external data access, and linked-server-style names.
-
-These checks reduce risk; they are not a complete security boundary. Use a read-only SQL Server account that can access only the necessary databases, schemas, tables, and views. In sensitive environments, review generated SQL and add authentication, authorization, rate limiting, logging, and query-cost controls before exposing QuerySmith to untrusted users.
+The AST authorization layer rejects comments, multiple statements, DDL/DML,
+procedure access, `SELECT INTO`, external table functions, system metadata
+discovery functions, unauthorized identifiers, capability violations, and invalid
+relationships before execution. These checks are still one layer of defense. Use
+a read-only SQL Server account restricted to the necessary schemas, tables, and
+views, and add authentication, rate limiting, audit storage, and database resource
+controls as appropriate for the deployment.
 
 ## Limitations
 
@@ -169,7 +600,12 @@ These checks reduce risk; they are not a complete security boundary. Use a read-
 
 ```bash
 python -m pip install -e ".[dev]"
-python -m pytest
+
+# Unit tests
+python -m pytest -q -m "not integration and not sqlserver"
+
+# Full suite including adversarial security tests
+python -m pytest -v tests/test_adversarial_security.py
 ```
 
 ## License

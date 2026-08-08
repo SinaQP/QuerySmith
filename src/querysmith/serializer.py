@@ -1,6 +1,21 @@
 """Serialize schema metadata for prompt context."""
 
-from querysmith.models import Column, ForeignKey, Table
+from querysmith.context import ContextBuilder
+from querysmith.models import (
+    Column,
+    ForeignKey,
+    ResolvedQuerySpace,
+    Table,
+)
+
+
+def serialize_query_space(query_space: ResolvedQuerySpace) -> str:
+    """Convert catalog-resolved metadata into deterministic LLM context."""
+
+    if not isinstance(query_space, ResolvedQuerySpace):
+        raise TypeError("serialize_query_space requires a ResolvedQuerySpace.")
+
+    return ContextBuilder().build(query_space)
 
 
 def serialize_schema(tables: list[Table]) -> str:

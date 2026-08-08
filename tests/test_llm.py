@@ -13,17 +13,7 @@ from querysmith.llm import (
     generate_sql,
 )
 
-
-SCHEMA_TEXT = "\n".join(
-    [
-        "Database schema:",
-        "dbo.Users",
-        "- Id int [PK]",
-        "- Name nvarchar",
-        "",
-        "Relationships: <none>",
-    ]
-)
+SCHEMA_TEXT = "Database schema:\ndbo.Users\n- Id int [PK]\n- Name nvarchar\n\nRelationships: <none>"
 
 
 class FakeClient:
@@ -58,6 +48,15 @@ def test_build_sql_prompt_says_output_sql_only() -> None:
     prompt = build_sql_prompt("show users", SCHEMA_TEXT)
 
     assert "Return SQL only" in prompt
+
+
+def test_build_sql_prompt_explains_semantics_capabilities_and_wildcards() -> None:
+    prompt = build_sql_prompt("count users", SCHEMA_TEXT)
+
+    assert "Semantic aliases are descriptive only" in prompt
+    assert "allowed operations" in prompt
+    assert "advisory business rules" in prompt
+    assert "COUNT(*) is allowed" in prompt
 
 
 def test_generate_sql_returns_safe_select_from_fake_client() -> None:

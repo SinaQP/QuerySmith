@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  sqlserver-integration:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: querysmith-sqlserver-integration
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD:-Password123!}
+      - MSSQL_PID=Developer
+    ports:
+      - "${MSSQL_PORT:-14333}:1433"
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P '${MSSQL_SA_PASSWORD:-Password123!}' -Q 'SELECT 1' -C || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s

@@ -4,20 +4,22 @@ from __future__ import annotations
 
 import os
 import re
-from typing import Protocol
+from typing import TYPE_CHECKING, Protocol, cast
 
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from openai import OpenAI
 
 from querysmith.guard import validate_safe_select
 
+if TYPE_CHECKING:
+    from pydantic import SecretStr
+
 
 _DEFAULT_BASE_URL = "https://api.avalai.ir/v1"
 _DEFAULT_MODEL = "gpt-4o-mini"
 _DEFAULT_EMBEDDING_MODEL = "text-embedding-3-small"
 _SYSTEM_MESSAGE = (
-    "You generate conservative SQL Server T-SQL SELECT queries only. "
-    "Return SQL only."
+    "You generate conservative SQL Server T-SQL SELECT queries only. Return SQL only."
 )
 
 
@@ -48,14 +50,16 @@ class OpenAICompatibleClient:
                 "AVALAI_API_KEY, or OPENAI_API_KEY."
             )
 
-        self.base_url = base_url or _first_env_value(
-            "QUERYSMITH_LLM_BASE_URL",
-            "AVALAI_BASE_URL",
-        ) or _DEFAULT_BASE_URL
+        self.base_url = (
+            base_url
+            or _first_env_value(
+                "QUERYSMITH_LLM_BASE_URL",
+                "AVALAI_BASE_URL",
+            )
+            or _DEFAULT_BASE_URL
+        )
         self.model_name = (
-            model_name
-            or os.getenv("QUERYSMITH_LLM_MODEL")
-            or _DEFAULT_MODEL
+            model_name or os.getenv("QUERYSMITH_LLM_MODEL") or _DEFAULT_MODEL
         )
         self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
 
@@ -81,7 +85,7 @@ class OpenAICompatibleClient:
 
         return ChatOpenAI(
             model=self.model_name,
-            api_key=self.api_key,
+            api_key=cast("SecretStr", self.api_key),
             base_url=self.base_url,
             temperature=0,
         )
@@ -91,7 +95,7 @@ class OpenAICompatibleClient:
 
         return OpenAIEmbeddings(
             model=_DEFAULT_EMBEDDING_MODEL,
-            api_key=self.api_key,
+            api_key=cast("SecretStr", self.api_key),
             base_url=self.base_url,
         )
 
@@ -99,35 +103,7 @@ class OpenAICompatibleClient:
 def build_sql_prompt(question: str, schema_text: str) -> str:
     """Build the SQL Server query-generation prompt."""
 
-    return "\n".join(
-        [
-            "Instructions:",
-            "- Generate SQL Server T-SQL only.",
-            "- Return exactly one query.",
-            "- Return SQL only; do not include markdown fences.",
-            "- Do not explain the query.",
-            "- Use only SELECT or WITH ... SELECT.",
-            "- Do not use INSERT, UPDATE, DELETE, DROP, ALTER, CREATE, MERGE, "
-            "TRUNCATE, EXEC, stored procedures, temp tables, SELECT INTO, "
-            "OUTPUT INTO, or multiple statements.",
-            "- Use only tables and columns present in the provided schema.",
-            "- Prefer explicit JOINs using the Relationships section.",
-            "- Use SQL Server syntax.",
-            "- For Persian and English user questions, infer the intended query "
-            "from the provided schema.",
-            "- If the question is ambiguous, produce the safest useful SELECT "
-            "query using only available schema.",
-            "- Never invent table names or column names.",
-            "- If the schema is insufficient, return a conservative SELECT query "
-            "over the most relevant available table instead of inventing columns.",
-            "",
-            "Schema:",
-            schema_text.strip(),
-            "",
-            "User question:",
-            question.strip(),
-        ]
-    )
+    return f"Instructions:\n- Generate SQL Server T-SQL only.\n- Return exactly one query.\n- Return SQL only; do not include markdown fences.\n- Do not explain the query.\n- Use only SELECT or WITH ... SELECT.\n- Do not use INSERT, UPDATE, DELETE, DROP, ALTER, CREATE, MERGE, TRUNCATE, EXEC, stored procedures, temp tables, SELECT INTO, OUTPUT INTO, or multiple statements.\n- Use only tables and columns present in the provided query context.\n- SELECT * and table.* are forbidden; COUNT(*) is allowed.\n- Always reference physical tables by their schema-qualified name.\n- Semantic aliases are descriptive only; use physical identifiers in SQL.\n- Respect the allowed operations listed for every column.\n- Treat advisory business rules as semantic guidance, not executable policy.\n- Interpretation warnings affect meaning, not physical identifiers.\n- Example values are hints only; do not force them into the query.\n- Prefer explicit JOINs using the Relationships section.\n- Do not assume relationships that are not listed.\n- Use SQL Server syntax.\n- For Persian and English user questions, infer the intended query from the provided schema.\n- If the question is ambiguous, produce the safest useful SELECT query using only available schema.\n- Never invent table names or column names.\n- If the schema is insufficient, return a conservative SELECT query over the most relevant available table instead of inventing columns.\n\nResolved query context:\n{schema_text.strip()}\n\nUser question:\n{question.strip()}"
 
 
 def generate_sql(

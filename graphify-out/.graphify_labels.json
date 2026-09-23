@@ -49,8 +49,5 @@
   "47": "ColumnAccess",
   "48": "DjangoCatalogIntrospector",
   "49": "generate_query",
-  "50": "pytest",
-  "51": "AuditLogger",
-  "52": "CapturingClient",
-  "53": ".connect"
+  "52": "CapturingClient"
 }
